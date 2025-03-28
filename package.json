@@ -1,0 +1,56 @@
+{
+  "name": "shimmer-theme",
+  "version": "0.0.1",
+  "displayName": "Shimmer Theme",
+  "description": "A theme may be comfortable",
+  "repository": {
+    "url": ""
+  },
+  "author": {
+    "name": "Nian"
+  },
+  "publisher": "Nian",
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.ts",
+    "build": "node src/index.ts",
+    "generate": "npm run download:theme && npm run generate:types",
+    "download:docs": "node scripts/downloadThemeColorMarkdown.ts",
+    "generate:types": "node scripts/generateTypescriptTypeFile.ts",
+    "package": "vsce package --no-dependencies"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Shimmer Theme Dark Melancholy",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shimmer-theme-dark-melancholy.json"
+      },
+      {
+        "label": "Shimmer Theme Dark Neutral",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shimmer-theme-dark-neutral.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/color": "^4.2.0",
+    "@types/node": "^22.10.7",
+    "@vscode/vsce": "^3.2.1",
+    "color": "^4.2.3",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.21.0"
+  }
+}

@@ -1,0 +1,13 @@
+.vscode/**
+.vscode-test/**
+.gitignore
+
+scripts
+src
+
+eslint.config.mjs
+pnpm-lock.yaml
+theme-color.md
+tsconfig.json
+
+screenshot.png
