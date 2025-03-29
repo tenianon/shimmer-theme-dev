@@ -1,8 +1,16 @@
-# Shimmer Theme README
+<div align="center">
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="Code Effects" width="240"/>
+  <br/> <br/>
+  <h1>Shimmer Theme README</h1>
+  <br/> <br/>
+
+</div>
 
 ## Code Effects
 
-![Effect Picture]()
+<div align="center">
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/screenshot.png?raw=true" alt="Code Effects" />
+</div>
 
 ## Install
 
@@ -33,7 +41,6 @@ Click `Manage -> Settings -> Open Settings(Json) -> Open Settings (UI) [icon col
 ```
 
 View [Theme Color Doc](https://code.visualstudio.com/api/references/theme-color)
-
 
 ## Color matching rules
 
