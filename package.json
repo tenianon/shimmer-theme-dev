@@ -1,11 +1,13 @@
 {
   "name": "shimmer-theme",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "displayName": "Shimmer Theme",
   "description": "A theme may be comfortable",
   "repository": {
-    "url": ""
+    "type": "github",
+    "url": "https://github.com/tenianon/shimmer-theme"
   },
+  "homepage": "https://github.com/tenianon/shimmer-theme/blob/main/README.md",
   "author": {
     "name": "Nian"
   },

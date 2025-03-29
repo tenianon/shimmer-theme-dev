@@ -1,8 +1,17 @@
-# Shimmer Theme README
+<br/> <br/>
+
+<div align="center">
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="图标" width="240"/>
+  <br/> <br/>
+  <h1>Shimmer Theme README</h1>
+  <br/> <br/>
+</div>
 
 ## 代码效果图
 
-![Effect Picture]()
+<div align="center">
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/screenshot.png?raw=true" alt="代码效果图" />
+</div>
 
 ## 安装
 
