@@ -1,15 +1,15 @@
 <br/> <br/>
 
 <div align="center">
-  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="Icon" width="240"/>
+  <img src="https://note.youdao.com/yws/public/resource/25072aa57ee3e21410b358a2e6a22bb3/xmlnote/WEBRESOURCE722bf759275b628a3cabc37d5533f0a7/3" alt="Icon" width="240"/>
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
 </div>
 
-## Code Effects
+## Effects
 
 <div align="center">
-  <img src="https://github.com/tenianon/shimmer-theme/blob/main/screenshot.png?raw=true" alt="Code Effects" />
+  <img src="https://note.youdao.com/yws/public/resource/25072aa57ee3e21410b358a2e6a22bb3/xmlnote/WEBRESOURCE9d36ee5a74de1a27bf9a253080d3f55a/5" alt="Effects" />
 </div>
 
 ## Install
