@@ -1,9 +1,7 @@
 <br/> <br/>
 
 <div align="center">
-  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="图标" width="240"/>
-  <br/> <br/>
-  <h1>Shimmer Theme README</h1>
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="图标" width="240" />
   <br/> <br/>
 </div>
 

@@ -4,7 +4,6 @@
   <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="Icon" width="240"/>
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
-  <br/> <br/>
 </div>
 
 ## Code Effects
