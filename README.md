@@ -1,19 +1,40 @@
 # Shimmer Theme README
 
-## 代码效果图
+## Code Effects
 
-![Effect Picture](https://private-user-images.githubusercontent.com/49859450/427632449-214c7212-de25-4849-9af2-c81441c697cf.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwODg4MzcsIm5iZiI6MTc0MzA4ODUzNywicGF0aCI6Ii80OTg1OTQ1MC80Mjc2MzI0NDktMjE0YzcyMTItZGUyNS00ODQ5LTlhZjItYzgxNDQxYzY5N2NmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMjclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzI3VDE1MTUzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTM1YmI5MmQ0ZjFkN2Q0MWI5ZmZhZTlhNTNkZDM1Njk2OGI4MGU1NDRkMjU0ODg5OTFhZDgyODFjMTJjYTQwM2EmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.c4RqYreetfkfq0MTu7Lv6o2VlpLIW82NYwwSYpROELs)
+![Effect Picture]()
 
-## 安装
+## Install
 
-#### 方式一 
+#### Method 1
 
-安装完成后，按下 `ctrl + shift + p` 显示所有命令弹窗，在输入框输入 `颜色主题` 或 `Color Theme` ，在结果栏中查找选项 `首选项: 颜色(Preferences: Color Theme)` ，按下回车，在颜色主题列表中选择 `Shimmer Theme` 开头的名称主题
+After the installation is complete, press `ctrl + shift + p` to display all command pop-ups, enter `Color Theme` in the input box, find the option `Preferences: Color Theme` in the result bar, press Enter, and select the theme with the name starting with `Shimmer Theme` in the color theme list.
 
-#### 方式二 
+#### Method 2
 
-点击 `管理(Manage) -> 主题(Themes) -> 颜色主题(Color Theme)`，颜色主题列表弹窗中选择 `Shimmer Theme` 开头的名称主题
+Click `Manage -> Themes -> Color Theme`, and select the theme that starts with `Shimmer Theme` in the color theme list pop-up window.
 
-## 配色规则
+## Modify color scheme
 
-该主题使用 [Adobe Color Accessibility Tools](https://color.adobe.com/zh/create/color-contrast-analyzer) WCAG 2.1 等级(**AA**)进行搭配
+Click `Manage -> Settings -> Open Settings(Json) -> Open Settings (UI) [icon column on the right side of the tab bar]` and add the following content to the `setting.json` file
+
+```json
+// setting.json
+{
+  ...
+  "workbench.colorCustomizations": {
+    "[Shimmer Theme Dark Melancholy]": {
+      "button.background": "#fff",
+      "editor.background": "#fff",
+      // your other color scheme
+    }
+  }
+}
+```
+
+View [Theme Color Doc](https://code.visualstudio.com/api/references/theme-color)
+
+
+## Color matching rules
+
+This theme is matched using [Adobe Color Accessibility Tools](https://color.adobe.com/en/create/color-contrast-analyzer) WCAG 2.1 level (**AA**) and meets color matching level requirements
