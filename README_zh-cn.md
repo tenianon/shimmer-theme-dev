@@ -1,15 +1,23 @@
 <br/> <br/>
 
 <div align="center">
-  <img src="https://note.youdao.com/yws/public/resource/25072aa57ee3e21410b358a2e6a22bb3/xmlnote/WEBRESOURCE722bf759275b628a3cabc37d5533f0a7/3" alt="图标" width="240" />
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="图标" width="240" />
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
+  <br/>
+
+
+
+<!-- markdownlint-disable no-inline-html heading-increment -->
+  [英文文档](https://github.com/tenianon/shimmer-theme/blob/main/README.md)
+    [中文文档]
+
 </div>
 
 ## 效果图
 
 <div align="center">
-  <img src="https://note.youdao.com/yws/public/resource/25072aa57ee3e21410b358a2e6a22bb3/xmlnote/WEBRESOURCE9d36ee5a74de1a27bf9a253080d3f55a/5" alt="效果图" />
+  <img src="https://github.com/tenianon/shimmer-theme/blob/main/screenshot.png?raw=true" alt="效果图" />
 </div>
 
 ## 安装
