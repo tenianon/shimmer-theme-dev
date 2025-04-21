@@ -1,20 +1,24 @@
 <br/> <br/>
 
 <div align="center">
-  <img src="https://github.com/tenianon/shimmer-theme/blob/main/icon.png?raw=true" alt="Icon" width="240"/>
+
+  [![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)](https://postimg.cc/k2x5Gkcz)
+
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
   <br/>
 
-  <!-- markdownlint-disable no-inline-html heading-increment -->
   [English Docs]
     [中文文档](https://github.com/tenianon/shimmer-theme/blob/main/README_zh-cn.md)
+    
 </div>
 
 ## Effects
 
 <div align="center">
-  <img src="https://github.com/tenianon/shimmer-theme/blob/main/screenshot.png?raw=true" alt="Effects" />
+
+  [![screenshot.png](https://i.postimg.cc/d3Fy29ZG/screenshot.png)](https://postimg.cc/Pp6JhY4q)
+
 </div>
 
 ## Install
@@ -22,6 +26,8 @@
 #### Method 1
 
 After the installation is complete, press `ctrl + shift + p` to display all command pop-ups, enter `Color Theme` in the input box, find the option `Preferences: Color Theme` in the result bar, press Enter, and select the theme with the name starting with `Shimmer Theme` in the color theme list.
+
+
 
 #### Method 2
 
