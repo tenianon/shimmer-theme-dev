@@ -713,6 +713,31 @@
       "settings": {
         "foreground": "#bf8286"
       }
+    },
+    {
+      "scope": [
+        "source.vue meta.tag.other entity.name.tag",
+        "source.vue meta.tag.custom entity.name.tag"
+      ],
+      "settings": {
+        "foreground": "#62b587"
+      }
+    },
+    {
+      "scope": [
+        "support.type.property-name.json"
+      ],
+      "settings": {
+        "foreground": "#689fc8"
+      }
+    },
+    {
+      "scope": [
+        "meta.paragraph.markdown"
+      ],
+      "settings": {
+        "foreground": "#9a9b9a"
+      }
     }
   ]
 }

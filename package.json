@@ -41,11 +41,6 @@
         "label": "Shimmer Theme Dark Melancholy",
         "uiTheme": "vs-dark",
         "path": "./themes/shimmer-theme-dark-melancholy.json"
-      },
-      {
-        "label": "Shimmer Theme Dark Neutral",
-        "uiTheme": "vs-dark",
-        "path": "./themes/shimmer-theme-dark-neutral.json"
       }
     ]
   },
