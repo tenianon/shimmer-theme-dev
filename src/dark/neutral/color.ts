@@ -1,5 +1,5 @@
 export const color: Color = {
-	primary: '#D663A2',
+	primary: '#d25499',
 	color0: '#0a0b0a',
 	color1: '#070707',
 	color2: '#171717',
@@ -16,4 +16,40 @@ export const color: Color = {
 	color13: '#c7c7c7',
 	color14: '#d7d7d7',
 	color15: '#e7e7e7'
-}
+} as const;
+
+export const webColor: Color = {
+  tag: "#d97189",
+  character: "#6fa125",
+  vueComponent: "#62B587",
+  reactComponent: "#149eca",
+} as const;
+
+
+export const semanticTokenColor: {
+  [key in Editor.SemanticTokenKey]?: string;
+} = {
+  variable: "#aa88c8",
+  parameter: "#bc9b5a",
+  keyword: "#c975af",
+  string: "#1aa38f",
+  comment: color.color6,
+  function: "#7c89f0",
+  method: "#7c89f0",
+  property: "#689fc8",
+  number: "#61ad86",
+  class: "#b575ed",
+  interface: "#bf8286",
+  type: "#bf8286",
+  namespace: "#c48656",
+  typeParameter: "#389fad",
+  enum: "#82a092",
+  enumMember: "#82a092",
+  decorator: "#ff0000",
+  event: "#ff0000",
+  label: "#ff0000",
+  macro: "#ff0000",
+  operator: "#ff0000",
+  regexp: "#ff0000",
+  struct: "#ff0000",
+};

@@ -25,9 +25,9 @@ function matchEditorTokenColorCustomizations(filePath: string = markdownFilePath
 
 function generateTypeScriptTypeFile(extractedValues: Array<string>) {
 
-	let interfaceContent = 'declare type WorkbenchColorCustomizations = Partial<{\r\n  [key in WorkbenchColorCustomizationsType]: string | null\r\n}>\r\n\r\n'
+	let interfaceContent = 'declare type WorkbenchColorCustomizations = Partial<{\r\n  [key in WorkbenchColorCustomizationsTypesLegend]: string | null\r\n}>\r\n\r\n'
 
-	interfaceContent += 'declare type WorkbenchColorCustomizationsType = \r\n'
+	interfaceContent += 'declare type WorkbenchColorCustomizationsTypesLegend = \r\n'
 
 	for (const key of extractedValues) {
 		interfaceContent += `	'${key}' |\r\n`

@@ -1,21 +1,29 @@
-import { html } from './html/semantic.ts'
-import { css } from './css/semantic.ts'
-import { js } from './js/semantic.ts'
-import { ts } from './ts/semantic.ts'
-import { json } from './json/semantic.ts'
-import { jsx } from './jsx/semantic.ts'
-import { tsx } from './tsx/semantic.ts'
-import { python } from './python/semantic.ts'
+import { html } from './html/scope.ts'
+import { css } from './css/scope.ts'
+import { js } from './js/scope.ts'
+import { scss } from './scss/scope.ts'
+import { less } from './less/scope.ts'
+import { jsdoc } from './jsdoc/scope.ts'
+import { ts } from './ts/scope.ts'
+import { jsx } from './jsx/scope.ts'
+import { tsx } from './tsx/scope.ts'
+import { vue } from './vue/scope.ts'
+import { json } from './json/scope.ts'
+import { md } from './md/scope.ts'
 
 const languages = [
-	...js,
 	...html,
 	...css,
-	...jsx,
+  ...scss,
+  ...less,
+  ...jsdoc,
+	...js,
 	...ts,
+	...jsx,
 	...tsx,
-	...json,
-  ...python
+  // ...vue,
+	// ...json,
+  // ...md
 ]
 
 export {

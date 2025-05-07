@@ -27,7 +27,7 @@
   "scripts": {
     "dev": "node --watch src/index.ts",
     "build": "node src/index.ts",
-    "generate": "npm run download:theme && npm run generate:types",
+    "generate": "npm run download:docs && npm run generate:types",
     "download:docs": "node scripts/downloadThemeColorMarkdown.ts",
     "generate:types": "node scripts/generateTypescriptTypeFile.ts",
     "package": "vsce package --no-dependencies"

@@ -2,7 +2,7 @@ import { readFile, writeFile, readdir, unlink } from "fs/promises";
 import { join, resolve } from "path";
 import { themes } from "./themes.ts";
 
-const themeList = themes
+const themeList = themes;
 
 async function deleteAllFiles(directoryPath = "themes") {
   try {
@@ -23,11 +23,29 @@ async function deleteAllFiles(directoryPath = "themes") {
 
 async function writeThemeFile() {
   const filePromises = themeList.map(
-    async ({ name, type, colors, tokenColors }) => {
+    async ({
+      name,
+      type,
+      colors,
+      semanticHighlighting,
+      semanticTokenColors,
+      tokenColors,
+    }) => {
       try {
         await writeFile(
           `./themes/${name}.json`,
-          JSON.stringify({ name, type, colors, tokenColors }, null, 2),
+          JSON.stringify(
+            {
+              name,
+              type,
+              colors,
+              semanticHighlighting,
+              semanticTokenColors,
+              tokenColors,
+            },
+            null,
+            2
+          ),
           "utf-8"
         );
         console.log(`Create file => './themes/${name}.json' successfully`);

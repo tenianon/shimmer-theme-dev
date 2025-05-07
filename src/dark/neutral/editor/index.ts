@@ -1,15 +1,22 @@
-import { languages } from './language/index.ts'
-import { symbolSemantic, tokenSemantic } from './public-semantic.ts'
+import { semanticToken } from "./semantic-token.ts";
+import { languages } from "./language/index.ts";
+import { symbolScope, tokenScopes } from "./textmate-scope.ts";
 
-const customizations: Semantic[] = [
-	symbolSemantic,
-	...tokenSemantic,
-	...languages
-]
+const semanticTokenColor: Editor.Semantic = semanticToken;
 
-for (let i = 0; i < customizations.length; i++) {
-	customizations[i].settings.foreground = customizations[i].settings.foreground?.toLowerCase()
+const tokenColor: Editor.Scopes[] = [symbolScope, ...tokenScopes, ...languages];
+
+for (let i = 0; i < tokenColor.length; i++) {
+  tokenColor[i].settings.foreground =
+    tokenColor[i].settings.foreground?.toLowerCase();
 }
 
+for (let token in semanticTokenColor) {
+  const key = token as keyof typeof semanticTokenColor;
+  semanticTokenColor[key].foreground =
+    semanticTokenColor[key].foreground?.toLowerCase();
+}
 
-export const editorTokenColorCustomizations = customizations
+export const editorTokenColorCustomizations = tokenColor;
+
+export const editorSemanticTokenColorCustomizations = semanticTokenColor;
