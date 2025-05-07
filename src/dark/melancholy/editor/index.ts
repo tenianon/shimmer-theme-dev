@@ -11,7 +11,7 @@ for (let i = 0; i < tokenColor.length; i++) {
     tokenColor[i].settings.foreground?.toLowerCase();
 }
 
-for (let token in semanticTokenColor) {
+for (const token in semanticTokenColor) {
   const key = token as keyof typeof semanticTokenColor;
   semanticTokenColor[key].foreground =
     semanticTokenColor[key].foreground?.toLowerCase();

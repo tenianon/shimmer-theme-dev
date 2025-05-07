@@ -27,6 +27,9 @@
   "scripts": {
     "dev": "node --watch src/index.ts",
     "build": "node src/index.ts",
+    "lint": "eslint ./src ./scripts",
+    "lint:debug": "eslint ./src ./scripts --debug",
+    "lint:fix": "eslint ./src ./scripts --fix",
     "generate": "npm run download:docs && npm run generate:types",
     "download:docs": "node scripts/downloadThemeColorMarkdown.ts",
     "generate:types": "node scripts/generateTypescriptTypeFile.ts",

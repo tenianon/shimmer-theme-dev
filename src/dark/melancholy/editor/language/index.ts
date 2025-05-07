@@ -21,9 +21,9 @@ const languages = [
 	...ts,
 	...jsx,
 	...tsx,
-  // ...vue,
-	// ...json,
-  // ...md
+  ...vue,
+	...json,
+  ...md
 ]
 
 export {
