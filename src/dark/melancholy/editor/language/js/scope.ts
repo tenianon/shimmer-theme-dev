@@ -37,4 +37,11 @@ export const js: Editor.Scopes[] = [
       foreground: stc.number,
     },
   },
+  {
+    // support vue file class
+    scope: ["meta.class.js entity.other.inherited-class.js"],
+    settings: {
+      foreground: stc.class,
+    },
+  },
 ];

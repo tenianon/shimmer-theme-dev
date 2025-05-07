@@ -97,7 +97,7 @@ export const css: Editor.Scopes[] = [
   {
     scope: ["meta.at-rule.keyframes.body"],
     settings: {
-      foreground: stc.enum,
+      foreground: wc.vueComponent,
     },
   },
   {

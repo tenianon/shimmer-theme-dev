@@ -14,4 +14,10 @@ export const tsx: Editor.Scopes[] = [
       foreground: stc.type,
     },
   },
+  {
+    scope: ["entity.name.type.class.tsx", "entity.other.inherited-class.tsx"],
+    settings: {
+      foreground: stc.class,
+    },
+  },
 ];

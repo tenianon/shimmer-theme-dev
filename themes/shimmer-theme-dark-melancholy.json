@@ -141,18 +141,18 @@
       "foreground": "#689fc8"
     },
     "number": {
-      "foreground": "#61ad86"
+      "foreground": "#86a698"
+    },
+    "class.declaration:vue": {
+      "foreground": "#b575ed"
     },
     "class:javascript": {
       "foreground": "#b575ed"
     },
-    "class.defaultLibrary": {
+    "class:typescript": {
       "foreground": "#b575ed"
     },
-    "class.declaration:typescript": {
-      "foreground": "#b575ed"
-    },
-    "class.declaration:typescriptreact": {
+    "class:typescriptreact": {
       "foreground": "#b575ed"
     },
     "interface": {
@@ -172,27 +172,6 @@
     },
     "enumMember": {
       "foreground": "#82a092"
-    },
-    "decorator": {
-      "foreground": "#ff0000"
-    },
-    "event": {
-      "foreground": "#ff0000"
-    },
-    "label": {
-      "foreground": "#ff0000"
-    },
-    "macro": {
-      "foreground": "#ff0000"
-    },
-    "operator": {
-      "foreground": "#ff0000"
-    },
-    "regexp": {
-      "foreground": "#ff0000"
-    },
-    "struct": {
-      "foreground": "#ff0000"
     }
   },
   "tokenColors": [
@@ -246,7 +225,7 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#61ad86"
+        "foreground": "#86a698"
       }
     },
     {
@@ -405,7 +384,7 @@
         "meta.at-rule.keyframes.body"
       ],
       "settings": {
-        "foreground": "#82a092"
+        "foreground": "#5ead82"
       }
     },
     {
@@ -500,7 +479,7 @@
         "meta.at-rule.keyframes.scss entity.other.attribute-name.scss"
       ],
       "settings": {
-        "foreground": "#61ad86"
+        "foreground": "#86a698"
       }
     },
     {
@@ -647,7 +626,15 @@
         "constant.language.nan"
       ],
       "settings": {
-        "foreground": "#61ad86"
+        "foreground": "#86a698"
+      }
+    },
+    {
+      "scope": [
+        "meta.class.js entity.other.inherited-class.js"
+      ],
+      "settings": {
+        "foreground": "#b575ed"
       }
     },
     {
@@ -716,11 +703,20 @@
     },
     {
       "scope": [
+        "entity.name.type.class.tsx",
+        "entity.other.inherited-class.tsx"
+      ],
+      "settings": {
+        "foreground": "#b575ed"
+      }
+    },
+    {
+      "scope": [
         "source.vue meta.tag.other entity.name.tag",
         "source.vue meta.tag.custom entity.name.tag"
       ],
       "settings": {
-        "foreground": "#62b587"
+        "foreground": "#5ead82"
       }
     },
     {

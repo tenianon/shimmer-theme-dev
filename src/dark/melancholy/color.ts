@@ -21,7 +21,7 @@ export const color: Color = {
 export const webColor: Color = {
   tag: "#d97189",
   character: "#6fa125",
-  vueComponent: "#62B587",
+  vueComponent: "#5ead82",
   reactComponent: "#149eca",
 } as const;
 
@@ -37,7 +37,7 @@ export const semanticTokenColor: {
   function: "#7c89f0",
   method: "#7c89f0",
   property: "#689fc8",
-  number: "#61ad86",
+  number: "#86a698",
   class: "#b575ed",
   interface: "#bf8286",
   type: "#bf8286",
