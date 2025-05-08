@@ -65,7 +65,7 @@
     "editorLineNumber.foreground": "#5a5b5a",
     "editorLineNumber.activeForeground": "#aaabaa",
     "editorCursor.foreground": "#aaabaa",
-    "editor.selectionBackground": "#aaabaa33",
+    "editor.selectionBackground": "#aaabaa4d",
     "editor.selectionHighlightBackground": "#aaabaa33",
     "editor.wordHighlightStrongBackground": "#aaabaa4d",
     "editor.lineHighlightBorder": "#00000000",

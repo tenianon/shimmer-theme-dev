@@ -69,7 +69,7 @@ const customizations: WorkbenchColorCustomizations = {
   'editorLineNumber.foreground': c.color5,
   'editorLineNumber.activeForeground': c.color10,
   'editorCursor.foreground': c.color10,
-  'editor.selectionBackground': Color(c.color10).alpha(0.2).hexa(),
+  'editor.selectionBackground': Color(c.color10).alpha(0.3).hexa(),
   'editor.selectionHighlightBackground': Color(c.color10).alpha(0.2).hexa(),
   'editor.wordHighlightStrongBackground': Color(c.color10).alpha(0.3).hexa(),
   'editor.lineHighlightBorder': Color().alpha(0).hexa(),
