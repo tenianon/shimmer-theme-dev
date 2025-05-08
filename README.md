@@ -37,16 +37,40 @@ Click `Manage -> Themes -> Color Theme`, and select the theme that starts with `
 
 Click `Manage -> Settings -> Open Settings(Json) -> Open Settings (UI) [icon column on the right side of the tab bar]` and add the following content to the `setting.json` file
 
+The following example modifies the theme color
+
 ```json
 // setting.json
 {
   ...
   "workbench.colorCustomizations": {
-    "[Shimmer Theme Dark Melancholy]": {
-      "button.background": "#fff",
-      "editor.background": "#fff",
-      // your other color scheme
-    }
+    // Current theme name
+   "[Shimmer Theme Dark Melancholy]": {
+     "button.background": "#ff00ff",
+     "button.foreground": "#ff00ff",
+     "button.hoverBackground": "#ff00ff",
+     "inputOption.activeBackground": "#ff00ff",
+     "inputOption.activeForeground": "#ff00ff",
+     "badge.foreground": "#ff00ff",
+     "badge.background": "#ff00ff",
+     "progressBar.background": "#ff00ff",
+     "activityBar.foreground": "#ff00ff",
+     "activityBarBadge.background": "#ff00ff",
+     "activityBarBadge.foreground": "#ff00ff",
+     "activityBarTop.foreground": "#ff00ff",
+     "activityBarTop.activeBorder": "#ff00ff",
+     "tab.activeBorderTop": "#ff00ff",
+     "editorSuggestWidget.focusHighlightForeground": "#ff00ff",
+     "editorSuggestWidget.highlightForeground": "#ff00ff",
+     "peekViewTitleLabel.foreground": "#ff00ff",
+     "panel.background": "#ff00ff",
+     "panel.dropBorder": "#ff00ff",
+     "panelTitle.activeBorder": "#ff00ff",
+     "panelTitle.activeForeground": "#ff00ff",
+     "statusBarItem.remoteHoverForeground": "#ff00ff",
+     "breadcrumb.focusForeground": "#ff00ff"
+     // other color scheme
+   }
   }
 }
 ```

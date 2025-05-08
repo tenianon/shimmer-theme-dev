@@ -1,6 +1,6 @@
-import { semanticToken } from "./semantic-token.ts";
-import { languages } from "./language/index.ts";
-import { symbolScope, tokenScopes } from "./textmate-scope.ts";
+import { semanticToken } from './semantic-token.ts';
+import { languages } from './language/index.ts';
+import { symbolScope, tokenScopes } from './textmate-scope.ts';
 
 const semanticTokenColor: Editor.Semantic = semanticToken;
 

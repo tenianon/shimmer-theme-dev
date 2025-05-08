@@ -252,3 +252,17 @@ exports = module.exports = {
   apiKey: "12345",
   apiUrl: "https://api.example.com",
 };
+
+const a = document.querySelector(".monaco-grid-view");
+const b = document.createElement("div");
+b.style.width = "100%";
+b.style.height = "100%";
+b.style.position = "absolute";
+b.style.top = "0px";
+b.style.left = "0px";
+b.style.zIndex = 999999;
+b.style.opacity = 0.08;
+b.style.backgroundImage = `url(https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png)`;
+b.style.pointerEvents = 'none'
+
+a.append(b)

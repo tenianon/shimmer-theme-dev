@@ -1,10 +1,9 @@
-import { semanticTokenColor as stc } from "../color.ts";
+import { semanticTokenColor as stc } from '../color.ts';
 
 /**
  * Semantic token scope map
  * link: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map
  */
-
 const semanticTokenMap: Editor.SemanticTokenMap = {
   variable: {
     foreground: stc.variable,
@@ -33,16 +32,16 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   number: {
     foreground: stc.number,
   },
-  "class:javascript": {
+  'class.declaration:vue': {
     foreground: stc.class,
   },
-  "class.defaultLibrary": {
+  'class:javascript': {
     foreground: stc.class,
   },
-  "class.declaration:typescript": {
+  'class:typescript': {
     foreground: stc.class,
   },
-  "class.declaration:typescriptreact": {
+  'class:typescriptreact': {
     foreground: stc.class,
   },
   interface: {
@@ -63,27 +62,27 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   enumMember: {
     foreground: stc.enumMember,
   },
-  decorator: {
-    foreground: stc.decorator,
-  },
-  event: {
-    foreground: stc.event,
-  },
-  label: {
-    foreground: stc.label,
-  },
-  macro: {
-    foreground: stc.macro,
-  },
-  operator: {
-    foreground: stc.operator,
-  },
-  regexp: {
-    foreground: stc.regexp,
-  },
-  struct: {
-    foreground: stc.struct,
-  },
+  // decorator: {
+  //   foreground: stc.decorator,
+  // },
+  // event: {
+  //   foreground: stc.event,
+  // },
+  // label: {
+  //   foreground: stc.label,
+  // },
+  // macro: {
+  //   foreground: stc.macro,
+  // },
+  // operator: {
+  //   foreground: stc.operator,
+  // },
+  // regexp: {
+  //   foreground: stc.regexp,
+  // },
+  // struct: {
+  //   foreground: stc.struct,
+  // },
 };
 
 const semanticToken = semanticTokenMap;

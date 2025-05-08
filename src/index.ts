@@ -1,10 +1,10 @@
-import { readFile, writeFile, readdir, unlink } from "fs/promises";
-import { join, resolve } from "path";
-import { themes } from "./themes.ts";
+import { readFile, writeFile, readdir, unlink } from 'fs/promises';
+import { join, resolve } from 'path';
+import { themes } from './themes.ts';
 
 const themeList = themes;
 
-async function deleteAllFiles(directoryPath = "themes") {
+async function deleteAllFiles(directoryPath = 'themes') {
   try {
     const files = await readdir(resolve(process.cwd(), directoryPath));
 
@@ -15,9 +15,9 @@ async function deleteAllFiles(directoryPath = "themes") {
     });
 
     await Promise.all(deletePromises);
-    console.log("All files have been deleted.");
+    console.log('All files have been deleted.');
   } catch (error) {
-    console.error("Error deleting files:", error);
+    console.error('Error deleting files:', error);
   }
 }
 
@@ -44,25 +44,25 @@ async function writeThemeFile() {
               tokenColors,
             },
             null,
-            2
+            2,
           ),
-          "utf-8"
+          'utf-8',
         );
         console.log(`Create file => './themes/${name}.json' successfully`);
       } catch (e) {
         console.error(`Error creating file => './themes/${name}.json':`, e);
       }
-    }
+    },
   );
 
   await Promise.allSettled(filePromises);
 }
 
 async function updatePackageFile() {
-  const packageJsonPath = resolve(process.cwd(), "package.json");
+  const packageJsonPath = resolve(process.cwd(), 'package.json');
 
   try {
-    const data = await readFile(packageJsonPath, "utf8");
+    const data = await readFile(packageJsonPath, 'utf8');
     const packageJson = JSON.parse(data);
 
     if (!packageJson.contributes) {
@@ -80,10 +80,10 @@ async function updatePackageFile() {
       };
     });
 
-    writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2), "utf8");
-    console.log("Update package.json successfully");
+    writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2), 'utf8');
+    console.log('Update package.json successfully');
   } catch (err) {
-    console.error("Update package.json error:", err);
+    console.error('Update package.json error:', err);
   }
 }
 

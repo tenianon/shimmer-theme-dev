@@ -1,4 +1,4 @@
-import { exec } from 'child_process'
+import { exec } from 'child_process';
 
 /**
  * -# progress
@@ -7,19 +7,20 @@ import { exec } from 'child_process'
  * -x [proxy] use proxy
  * -v log debug info
  */
-const curlCommand = 'curl -# -O -x 127.0.0.1:7897 https://raw.githubusercontent.com/microsoft/vscode-docs/main/api/references/theme-color.md'
+const curlCommand =
+  'curl -# -O -x 127.0.0.1:7897 https://raw.githubusercontent.com/microsoft/vscode-docs/main/api/references/theme-color.md';
 
 exec(curlCommand, (error, stdout, stderr) => {
-	if (error) {
-		console.error(`Error: ${error.message}`)
-		return
-	}
-	if (stderr) {
-		console.error(`Command execution error: ${stderr}`)
-		return
-	}
-	if (stdout) {
-		console.log('File has been downloaded')
-		console.log(stdout)
-	}
-})
+  if (error) {
+    console.error(`Error: ${error.message}`);
+    return;
+  }
+  if (stderr) {
+    console.error(`Command execution error: ${stderr}`);
+    return;
+  }
+  if (stdout) {
+    console.log('File has been downloaded');
+    console.log(stdout);
+  }
+});

@@ -1,10 +1,9 @@
-import { semanticTokenColor as stc } from "../color.ts";
+import { semanticTokenColor as stc } from '../color.ts';
 
 /**
  * Semantic token scope map
  * link: https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#semantic-token-scope-map
  */
-
 const semanticTokenMap: Editor.SemanticTokenMap = {
   variable: {
     foreground: stc.variable,
@@ -33,16 +32,16 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   number: {
     foreground: stc.number,
   },
-  "class.declaration:vue": {
+  'class.declaration:vue': {
     foreground: stc.class,
   },
-  "class:javascript": {
+  'class:javascript': {
     foreground: stc.class,
   },
-  "class:typescript": {
+  'class:typescript': {
     foreground: stc.class,
   },
-  "class:typescriptreact": {
+  'class:typescriptreact': {
     foreground: stc.class,
   },
   interface: {

@@ -2,15 +2,16 @@ import {
   color as c,
   webColor as wc,
   semanticTokenColor as stc,
-} from "../../../color.ts";
+} from '../../../color.ts';
 
 export const css: Editor.Scopes[] = [
   {
     scope: [
-      "punctuation.definition.entity.css",
-      "punctuation.definition.entity.begin.bracket.square.css",
-      "punctuation.definition.entity.end.bracket.square.css",
-      "entity.other.attribute-name.attribute.css",
+      'punctuation.definition.entity.css',
+      'punctuation.definition.entity.begin.bracket.square.css',
+      'punctuation.definition.entity.end.bracket.square.css',
+      'entity.other.attribute-name.attribute.css',
+      'variable.parameter.misc.css',
     ],
     settings: {
       foreground: c.color8,
@@ -18,10 +19,10 @@ export const css: Editor.Scopes[] = [
   },
   {
     scope: [
-      "entity.other.attribute-name.class",
-      "entity.other.attribute-name.id",
-      "entity.other.attribute-name.placeholder",
-      "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
+      'entity.other.attribute-name.class',
+      'entity.other.attribute-name.id',
+      'entity.other.attribute-name.placeholder',
+      'entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity',
     ],
     settings: {
       foreground: stc.variable,
@@ -29,34 +30,38 @@ export const css: Editor.Scopes[] = [
   },
   {
     scope: [
-      "support.type.property-name",
-      "support.type.property-name.media",
-      "meta.at-rule.media.header",
-      "meta.property-name",
+      'support.type.property-name',
+      'support.type.property-name.media',
+      'meta.at-rule.media.header',
+      'meta.property-name',
     ],
     settings: {
       foreground: stc.property,
     },
   },
   {
-    scope: ["support.constant.property-value", "meta.property-value"],
+    scope: [
+      'support.constant.color.w3c-standard-color-name.css',
+      'support.constant.property-value',
+      'meta.property-value',
+    ],
     settings: {
       foreground: stc.parameter,
     },
   },
   {
-    scope: ["meta.function.gradient.invalid.deprecated.gradient"],
+    scope: ['meta.function.gradient.invalid.deprecated.gradient'],
     settings: {
       foreground: stc.function,
     },
   },
   {
     scope: [
-      "keyword.operator.logical.and.media",
-      "keyword.other.important",
-      "keyword.other.important punctuation.separator",
-      "keyword.operator.gradient",
-      "invalid.deprecated.function",
+      'keyword.operator.logical.and.media',
+      'keyword.other.important',
+      'keyword.other.important punctuation.separator',
+      'keyword.operator.gradient',
+      'invalid.deprecated.function',
     ],
     settings: {
       foreground: stc.keyword,
@@ -64,10 +69,10 @@ export const css: Editor.Scopes[] = [
   },
   {
     scope: [
-      "constant.other.color.rgb-value",
-      "punctuation.definition.constant",
-      "support.constant.font-name",
-      "variable.parameter.url",
+      'constant.other.color.rgb-value',
+      'punctuation.definition.constant',
+      'support.constant.font-name',
+      'variable.parameter.url',
     ],
     settings: {
       foreground: stc.string,
@@ -75,51 +80,44 @@ export const css: Editor.Scopes[] = [
   },
   {
     scope: [
-      "entity.other.attribute-name.pseudo-element",
-      "entity.other.attribute-name.pseudo-class",
+      'entity.other.attribute-name.pseudo-element',
+      'entity.other.attribute-name.pseudo-class',
     ],
     settings: {
       foreground: stc.type,
     },
   },
   {
-    scope: ["entity.other.attribute-name.css"],
-    settings: {
-      foreground: stc.typeParameter,
-    },
-  },
-  {
-    scope: ["support.constant.parity"],
+    scope: ['support.constant.parity'],
     settings: {
       foreground: wc.character,
     },
   },
   {
-    scope: ["meta.at-rule.keyframes.body"],
+    scope: [
+      'meta.at-rule.keyframes.body',
+      'meta.attribute-selector entity.other.attribute-name',
+    ],
     settings: {
-      foreground: stc.enum,
+      foreground: wc.vueComponent,
     },
   },
   {
-    scope: ["support.constant.media", "variable.parameter.keyframe-list"],
+    scope: ['support.constant.media', 'variable.parameter.keyframe-list'],
     settings: {
       foreground: stc.namespace,
     },
   },
   {
-    scope: [
-      "variable.argument.css",
-      "variable.css",
-      "variable.parameter.misc",
-    ],
+    scope: ['variable.argument.css', 'variable.css'],
     settings: {
       foreground: stc.class,
     },
   },
   {
-    scope: ["meta.at-rule.header", "meta.at-rule.import", "meta.at-rule.else"],
+    scope: ['meta.at-rule.header', 'meta.at-rule.import', 'meta.at-rule.else'],
     settings: {
-      foreground: wc.character,
+      foreground: stc.typeParameter,
     },
   },
 ];

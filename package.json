@@ -27,6 +27,7 @@
   "scripts": {
     "dev": "node --watch src/index.ts",
     "build": "node src/index.ts",
+    "format": "prettier --write src/ scripts/",
     "lint": "eslint ./src ./scripts",
     "lint:debug": "eslint ./src ./scripts --debug",
     "lint:fix": "eslint ./src ./scripts --fix",
@@ -41,6 +42,11 @@
         "label": "Shimmer Theme Dark Melancholy",
         "uiTheme": "vs-dark",
         "path": "./themes/shimmer-theme-dark-melancholy.json"
+      },
+      {
+        "label": "Shimmer Theme Dark Neutral",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shimmer-theme-dark-neutral.json"
       }
     ]
   },
@@ -52,6 +58,7 @@
     "color": "^4.2.3",
     "eslint": "^9.18.0",
     "globals": "^15.14.0",
+    "prettier": "3.5.3",
     "typescript-eslint": "^8.21.0"
   }
 }

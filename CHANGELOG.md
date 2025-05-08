@@ -1,9 +1,8 @@
 # Change Log
 
-All notable changes to the "shimmer-theme" extension will be documented in this file.
+## v0.04
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Refactors
 
-## [Unreleased]
-
-- Initial release
+- Enable SemanticHighlighting, more delicate coloring
+- Add `Less` and `Sass` syntax support

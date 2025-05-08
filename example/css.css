@@ -24,6 +24,19 @@ body {
   color-scheme: light dark;
 }
 
+.monaco-grid-view::after{
+  content: "";
+  background-image: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 body {
   display: grid;
   place-items: center;

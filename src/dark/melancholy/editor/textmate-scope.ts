@@ -1,17 +1,4 @@
-import { color as c, semanticTokenColor as stc } from "../color.ts";
-
-const symbolScope: Editor.Scopes = {
-  scope: [
-    "punctuation",
-    "meta.brace",
-    "keyword.operator",
-    "storage.type.function.arrow",
-    "constant.language.import-export-all",
-  ],
-  settings: {
-    foreground: c.color8,
-  },
-};
+import { color as c, semanticTokenColor as stc } from '../color.ts';
 
 /**
  * Fallback TextMate Scope
@@ -19,24 +6,24 @@ const symbolScope: Editor.Scopes = {
  */
 const tokenGroupScopesMap: Editor.TokenGroupScopesMap = {
   comments: {
-    scope: ["comment", "punctuation.definition.comment"],
+    scope: ['comment', 'punctuation.definition.comment'],
     foreground: stc.comment,
   },
   strings: {
-    scope: ["string", "meta.embedded.assembly"],
+    scope: ['string', 'meta.embedded.assembly'],
     foreground: stc.string,
   },
   keywords: {
     scope: [
-      "keyword - keyword.operator",
-      "keyword.control",
-      "storage",
-      "storage.type",
+      'keyword - keyword.operator',
+      'keyword.control',
+      'storage',
+      'storage.type',
     ],
     foreground: stc.keyword,
   },
   numbers: {
-    scope: ["constant.numeric"],
+    scope: ['constant.numeric'],
     foreground: stc.number,
   },
   // types: {
@@ -49,12 +36,25 @@ const tokenGroupScopesMap: Editor.TokenGroupScopesMap = {
   //   foreground: stc.type,
   // },
   functions: {
-    scope: ["entity.name.function", "support.function"],
+    scope: ['entity.name.function', 'support.function'],
     foreground: stc.function,
   },
   variables: {
-    scope: ["variable", "entity.name.variable"],
+    scope: ['variable', 'entity.name.variable'],
     foreground: stc.variable,
+  },
+};
+
+const symbolScope: Editor.Scopes = {
+  scope: [
+    'punctuation',
+    'meta.brace',
+    'keyword.operator',
+    'storage.type.function.arrow',
+    'constant.language.import-export-all',
+  ],
+  settings: {
+    foreground: c.color8,
   },
 };
 
