@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  [![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)](https://postimg.cc/k2x5Gkcz)
+  [![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)](https://github.com/tenianon/shimmer-theme/blob/main/icon.png)
 
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
@@ -15,9 +15,17 @@
 
 ## Effects
 
+
+#### Dark Melancholy
 <div align="center">
 
-  [![screenshot.png](https://i.postimg.cc/d3Fy29ZG/screenshot.png)](https://postimg.cc/Pp6JhY4q)
+  [![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)](https://github.com/tenianon/shimmer-theme/blob/main/shimmer-theme-dark-melancholy.png)
+</div>
+
+#### Dark Neutral
+<div align="center">
+
+  [![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)](https://github.com/tenianon/shimmer-theme/blob/main/shimmer-theme-dark-neutral.png)
 
 </div>
 
@@ -37,7 +45,7 @@ Click `Manage -> Themes -> Color Theme`, and select the theme that starts with `
 
 Click `Manage -> Settings -> Open Settings(Json) -> Open Settings (UI) [icon column on the right side of the tab bar]` and add the following content to the `setting.json` file
 
-The following example modifies the theme color
+#### Example
 
 ```json
 // setting.json
@@ -46,6 +54,7 @@ The following example modifies the theme color
   "workbench.colorCustomizations": {
     // Current theme name
    "[Shimmer Theme Dark Melancholy]": {
+     // Change primary color
      "button.background": "#ff00ff",
      "button.foreground": "#ff00ff",
      "button.hoverBackground": "#ff00ff",

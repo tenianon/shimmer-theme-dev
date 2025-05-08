@@ -15,9 +15,16 @@
 
 ## 效果图
 
+#### Dark Melancholy
 <div align="center">
 
-  [![screenshot.png](https://i.postimg.cc/d3Fy29ZG/screenshot.png)](https://postimg.cc/Pp6JhY4q)
+  [![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)](https://github.com/tenianon/shimmer-theme/blob/main/shimmer-theme-dark-melancholy.png)
+</div>
+
+#### Dark Neutral
+<div align="center">
+
+  [![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)](https://github.com/tenianon/shimmer-theme/blob/main/shimmer-theme-dark-neutral.png)
 
 </div>
 
@@ -35,7 +42,7 @@
 
 点击 `管理 -> 设置 -> 打开设置(Json) -> 打开设置(ui)[标签栏右边的图标列]` ，在 `setting.json` 文件里追加以下内容
 
-下面的例子是修改主题色
+#### 例子
 
 ```json
 // setting.json
@@ -44,6 +51,7 @@
   "workbench.colorCustomizations": {
     // 当前主题名称
    "[Shimmer Theme Dark Melancholy]": {
+     // 修改主调色
      "button.background": "#ff00ff",
      "button.foreground": "#ff00ff",
      "button.hoverBackground": "#ff00ff",
