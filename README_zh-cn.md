@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  [![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)](https://postimg.cc/k2x5Gkcz)
+  [![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)](https://github.com/tenianon/shimmer-theme/blob/main/icon.png)
 
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
