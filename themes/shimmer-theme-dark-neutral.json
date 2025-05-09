@@ -143,6 +143,9 @@
     "number": {
       "foreground": "#82a092"
     },
+    "class:html": {
+      "foreground": "#b575ed"
+    },
     "class.declaration:vue": {
       "foreground": "#b575ed"
     },

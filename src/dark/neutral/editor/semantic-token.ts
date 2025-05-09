@@ -32,6 +32,9 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   number: {
     foreground: stc.number,
   },
+  'class:html': {
+    foreground: stc.class,
+  },
   'class.declaration:vue': {
     foreground: stc.class,
   },
