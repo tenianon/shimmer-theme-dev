@@ -6,6 +6,9 @@
 
 - In the `HTML` file, js `class` semantic coloring
 
+### Change
+
+- `number` and `typeParameter` color
 
 ## v0.04
 
