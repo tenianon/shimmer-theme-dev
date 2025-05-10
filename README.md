@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  [![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)](https://github.com/tenianon/shimmer-theme/blob/main/icon.png)
+  ![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)
 
   <br/> <br/>
   <h1>Shimmer Theme README</h1>
@@ -19,13 +19,13 @@
 #### Dark Melancholy
 <div align="center">
 
-  [![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)](https://github.com/tenianon/shimmer-theme/blob/main/shimmer-theme-dark-melancholy.png)
+  ![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)
 </div>
 
 #### Dark Neutral
 <div align="center">
 
-  [![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)](https://github.com/tenianon/shimmer-theme/blob/main/shimmer-theme-dark-neutral.png)
+  ![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)
 
 </div>
 
