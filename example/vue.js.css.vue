@@ -1,8 +1,12 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
+
+
 </script>
 <template>
   <div>vue</div>
+  <vue-component></vue-component>
+  <VueComponent></VueComponent>
 </template>
 <style>
 html,
@@ -48,10 +52,10 @@ body {
 }
 
 .card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
-  background-image: url("/image.jpg");
+  background-image: url('/image.jpg');
   background-size: cover;
   background-position: center;
   mix-blend-mode: multiply;
@@ -171,9 +175,9 @@ ul:has(> li:only-child) {
 main {
   display: grid;
   grid-template-areas:
-    "header"
-    "content"
-    "footer";
+    'header'
+    'content'
+    'footer';
   grid-template-rows: auto 1fr auto;
   height: 100dvh;
 }
@@ -253,8 +257,8 @@ fieldset:disabled * {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: url("/fonts/inter.woff2") format("woff2");
+  font-family: 'Inter';
+  src: url('/fonts/inter.woff2') format('woff2');
   font-weight: 100 900;
   font-display: swap;
 }
@@ -273,7 +277,7 @@ fieldset:disabled * {
   margin-bottom: 1rem;
 }
 
-input[type="range"] {
+input[type='range'] {
   accent-color: deeppink;
 }
 

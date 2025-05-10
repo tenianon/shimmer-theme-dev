@@ -4,10 +4,24 @@ type Foo = {
   name: string  
 }
 
+
+type DeepPick<T, K extends string> = K extends `${infer First}.${infer Rest}`
+  ? First extends keyof T
+    ? { [P in First]: DeepPick<T[First], Rest> }
+    : never
+  : K extends keyof T
+  ? { [P in K]: T[P] }
+  : never;
+
+const a = 1000000
+
+
 </script>
 <template>
   <div>
-    vue.ts.less
+    <p>vue.ts.less</p>
+    <vue-component></vue-component>
+    <VueComponent :num="123123123"></VueComponent>
   </div>
 </template>
 <style lang="less">
