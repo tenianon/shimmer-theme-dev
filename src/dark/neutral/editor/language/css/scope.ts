@@ -117,7 +117,7 @@ export const css: Editor.Scopes[] = [
   {
     scope: ['meta.at-rule.header', 'meta.at-rule.import', 'meta.at-rule.else'],
     settings: {
-      foreground: stc.typeParameter,
+      foreground: stc.enum,
     },
   },
 ];
