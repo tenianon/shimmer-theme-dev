@@ -141,7 +141,7 @@
       "foreground": "#689fc8"
     },
     "number": {
-      "foreground": "#6da39d"
+      "foreground": "#62a193"
     },
     "class:html": {
       "foreground": "#b575ed"
@@ -168,7 +168,7 @@
       "foreground": "#c48656"
     },
     "typeParameter": {
-      "foreground": "#82a092"
+      "foreground": "#949c5d"
     },
     "enum": {
       "foreground": "#389fad"
@@ -228,7 +228,7 @@
         "constant.numeric"
       ],
       "settings": {
-        "foreground": "#6da39d"
+        "foreground": "#62a193"
       }
     },
     {
@@ -477,7 +477,7 @@
         "support.constant.vendored.property-value.scss"
       ],
       "settings": {
-        "foreground": "#6da39d"
+        "foreground": "#62a193"
       }
     },
     {
@@ -615,7 +615,7 @@
         "constant.language.nan"
       ],
       "settings": {
-        "foreground": "#6da39d"
+        "foreground": "#62a193"
       }
     },
     {
