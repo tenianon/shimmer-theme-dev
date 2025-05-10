@@ -1,5 +1,12 @@
 # Change Log
 
+## v0.05
+
+### Fix
+
+- In the `HTML` file, js `class` semantic coloring
+
+
 ## v0.04
 
 ### Refactors
