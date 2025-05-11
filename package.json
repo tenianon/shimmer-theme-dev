@@ -53,9 +53,11 @@
   "devDependencies": {
     "@eslint/js": "^9.18.0",
     "@types/color": "^4.2.0",
+    "@types/culori": "^4.0.0",
     "@types/node": "^22.10.7",
     "@vscode/vsce": "^3.2.1",
     "color": "^4.2.3",
+    "culori": "^4.0.1",
     "eslint": "^9.18.0",
     "globals": "^15.14.0",
     "prettier": "3.5.3",
