@@ -84,7 +84,7 @@ declare namespace Editor {
     name?: string;
     scope: string | Array<string>;
     settings: {
-      foreground: string;
+      foreground?: string;
       fontStyle?: FontStyle;
     };
     [key: string]: any;
