@@ -8,16 +8,13 @@
   <h1>Shimmer Theme README</h1>
   <br/>
 
-  [English Docs](https://github.com/tenianon/shimmer-theme/blob/main/README.md)
-    [中文文档]
-
+  [English Docs]
+    [中文文档](https://github.com/tenianon/shimmer-theme/blob/main/README_zh-cn.md)
+    
 </div>
 
+## Effects
 
-1
-
-
-## 效果图
 
 #### Dark Melancholy
 <div align="center">
@@ -32,30 +29,32 @@
 
 </div>
 
-## 安装
+## Install
 
-#### 方式一
+#### Method 1
 
-安装完成后，按下 `ctrl + shift + p` 显示所有命令弹窗，在输入框输入 `颜色主题` 或 `Color Theme` ，在结果栏中查找选项 `首选项: 颜色(Preferences: Color Theme)` ，按下回车，在颜色主题列表中选择 `Shimmer Theme` 开头的名称主题
+After the installation is complete, press `ctrl + shift + p` to display all command pop-ups, enter `Color Theme` in the input box, find the option `Preferences: Color Theme` in the result bar, press Enter, and select the theme with the name starting with `Shimmer Theme` in the color theme list.
 
-#### 方式二
 
-点击 `管理 -> 主题 -> 颜色主题`，颜色主题列表弹窗中选择 `Shimmer Theme` 开头的名称主题
 
-## 修改配色
+#### Method 2
 
-点击 `管理 -> 设置 -> 打开设置(Json) -> 打开设置(ui)[标签栏右边的图标列]` ，在 `setting.json` 文件里追加以下内容
+Click `Manage -> Themes -> Color Theme`, and select the theme that starts with `Shimmer Theme` in the color theme list pop-up window.
 
-#### 例子
+## Modify color scheme
+
+Click `Manage -> Settings -> Open Settings(Json) -> Open Settings (UI) [icon column on the right side of the tab bar]` and add the following content to the `setting.json` file
+
+#### Example
 
 ```json
 // setting.json
 {
   ...
   "workbench.colorCustomizations": {
-    // 当前主题名称
+    // Current theme name
    "[Shimmer Theme Dark Melancholy]": {
-     // 修改主调色
+     // Change primary color
      "button.background": "#ff00ff",
      "button.foreground": "#ff00ff",
      "button.hoverBackground": "#ff00ff",
@@ -79,14 +78,14 @@
      "panelTitle.activeForeground": "#ff00ff",
      "statusBarItem.remoteHoverForeground": "#ff00ff",
      "breadcrumb.focusForeground": "#ff00ff"
-     // 其他配色
+     // other color scheme
    }
   }
 }
 ```
 
-查看 [主题颜色文档](https://code.visualstudio.com/api/references/theme-color)
+View [Theme Color Doc](https://code.visualstudio.com/api/references/theme-color)
 
-## 配色规则
+## Color matching rules
 
-该主题使用 [Adobe Color Accessibility Tools](https://color.adobe.com/zh/create/color-contrast-analyzer) WCAG 2.1 等级(**AA**)进行搭配且符合配色等级要求
+This theme is matched using [Adobe Color Accessibility Tools](https://color.adobe.com/en/create/color-contrast-analyzer) WCAG 2.1 level (**AA**) and meets color matching level requirements
