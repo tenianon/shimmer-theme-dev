@@ -1,12 +1,3 @@
 node_modules
 
-example
-scripts
-src
-test
-
-.prettierrc
-eslint.config
-theme-color.md
-
 *.vsix
