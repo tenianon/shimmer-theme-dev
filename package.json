@@ -23,20 +23,6 @@
   "engines": {
     "vscode": "^1.85.0"
   },
-  "type": "module",
-  "scripts": {
-    "dev": "node --watch src/index.ts",
-    "build": "node src/index.ts",
-    "build:public": "node scripts/generatePublicBuild.ts",
-    "format": "prettier --write src/ scripts/",
-    "lint": "eslint ./src ./scripts",
-    "lint:debug": "eslint ./src ./scripts --debug",
-    "lint:fix": "eslint ./src ./scripts --fix",
-    "generate": "npm run download:docs && npm run generate:types",
-    "download:docs": "node scripts/downloadThemeColorMarkdown.ts",
-    "generate:types": "node scripts/generateTypescriptTypeFile.ts",
-    "package": "vsce package --no-dependencies"
-  },
   "contributes": {
     "themes": [
       {
@@ -50,19 +36,5 @@
         "path": "./themes/shimmer-theme-dark-neutral.json"
       }
     ]
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@types/color": "^4.2.0",
-    "@types/culori": "^4.0.0",
-    "@types/node": "^22.10.7",
-    "@vscode/vsce": "^3.2.1",
-    "color": "^4.2.3",
-    "culori": "^4.0.1",
-    "eslint": "^9.18.0",
-    "globals": "^15.14.0",
-    "globby": "^14.1.0",
-    "prettier": "3.5.3",
-    "typescript-eslint": "^8.21.0"
   }
 }

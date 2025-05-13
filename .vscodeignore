@@ -1,16 +1,8 @@
+
 .vscode/**
 .vscode-test/**
-.gitignore
 
-example
-scripts
-src
-test
-
-eslint.config.mjs
-pnpm-lock.yaml
-theme-color.md
-tsconfig.json
+README_zh-cn.md
 
 shimmer-theme-dark-melancholy.png
 shimmer-theme-dark-neutral.png
