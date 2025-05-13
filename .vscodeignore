@@ -5,6 +5,7 @@
 example
 scripts
 src
+test
 
 eslint.config.mjs
 pnpm-lock.yaml
