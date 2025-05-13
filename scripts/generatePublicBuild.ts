@@ -8,6 +8,7 @@ const projectRootPath = path.resolve(fileURLToPath(import.meta.url), '../../');
 const outDir = path.join(projectRootPath, 'public-build');
 
 const outFileList = await globby([
+  '.vscode',
   'themes',
   '.vscodeignore',
   'CHANGELOG.md',
