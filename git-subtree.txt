@@ -1,0 +1,2 @@
+git remote add public-build https://github.com/tenianon/shimmer-theme.git
+git subtree push --prefix=public-build public-build main
