@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const projectRootPath = path.resolve(fileURLToPath(import.meta.url), '../../');
 
-const outDir = path.join(projectRootPath, 'public-build');
+const outDir = path.join(projectRootPath, 'public-repo');
 
 const outFileList = await globby([
   '.vscode',
