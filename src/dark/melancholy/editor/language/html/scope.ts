@@ -1,10 +1,11 @@
-import { color as c, webColor as wc } from '../../../color.ts';
+import { color as c } from '../../../color.ts';
+import { colorHTML } from "./color.ts";
 
 export const html: Editor.Scopes[] = [
   {
     scope: ['text.html.derivative meta.tag'],
     settings: {
-      foreground: wc.tag,
+      foreground: colorHTML.tag,
     },
   },
   {
@@ -22,7 +23,7 @@ export const html: Editor.Scopes[] = [
   {
     scope: ['punctuation.definition.entity', 'constant.character.entity'],
     settings: {
-      foreground: wc.character,
+      foreground: colorHTML.character,
     },
   },
 ];

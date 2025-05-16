@@ -1,16 +1,18 @@
-import { color as c, webColor as wc } from '../../../color.ts';
+import { color as c } from '../../../color.ts';
+import { colorReact } from './color.ts';
+import { colorHTML } from '../html/color.ts';
 
 export const jsx: Editor.Scopes[] = [
   {
     scope: ['support.class.component'],
     settings: {
-      foreground: wc.reactComponent,
+      foreground: colorReact.component,
     },
   },
   {
     scope: ['entity.name.tag'],
     settings: {
-      foreground: wc.tag,
+      foreground: colorHTML.tag,
     },
   },
   {

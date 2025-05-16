@@ -1,8 +1,8 @@
-import {
-  color as c,
-  semanticTokenColor as stc,
-  webColor as wc,
-} from '../../../color.ts';
+import { color as c, semanticTokenColor as stc } from '../../../color.ts';
+import { colorVue } from '../vue/color.ts';
+import { colorReact } from '../jsx/color.ts';
+import { colorHTML } from '../html/color.ts';
+import { colorMD } from '../md/color.ts';
 
 export const md: Editor.Scopes[] = [
   {
@@ -52,7 +52,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.strikethrough.markdown',
     ],
     settings: {
-      foreground: stc.typeParameter,
+      foreground: c.color7,
       fontStyle: 'strikethrough',
     },
   },
@@ -68,7 +68,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.quote.markdown meta.paragraph.markdown',
     ],
     settings: {
-      foreground: wc.reactComponent,
+      foreground: colorReact.component,
     },
   },
   {
@@ -77,7 +77,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.underline.link.image.markdown',
     ],
     settings: {
-      foreground: stc.property,
+      foreground: colorMD.mdLink,
     },
   },
   {
@@ -85,9 +85,11 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown punctuation.definition.link.description',
       'text.html.markdown punctuation.definition.metadata.markdown',
       'text.html.markdown punctuation.definition.link.title',
+      'text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown',
+      'text.html.markdown punctuation.definition.link.markdown',
     ],
     settings: {
-      foreground: stc.keyword,
+      foreground: stc.enum,
     },
   },
   {
@@ -103,9 +105,10 @@ export const md: Editor.Scopes[] = [
     scope: [
       'text.html.markdown punctuation.definition.markdown',
       'text.html.markdown fenced_code.block.language.markdown',
+      'text.html.markdown fenced_code.block.language',
     ],
     settings: {
-      foreground: stc.class,
+      foreground: stc.namespace,
     },
   },
 
@@ -115,13 +118,13 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown punctuation.definition.table.markdown',
     ],
     settings: {
-      foreground: wc.vueComponent,
+      foreground: colorVue.component,
     },
   },
   {
     scope: ['text.html.markdown meta.separator.markdown'],
     settings: {
-      foreground: wc.character,
+      foreground: colorHTML.character,
     },
   },
   {
@@ -136,7 +139,7 @@ export const md: Editor.Scopes[] = [
   {
     scope: ['text.html.markdown meta.embedded.math.markdown'],
     settings: {
-      foreground: stc.namespace,
+      foreground: stc.property,
     },
   },
 ];

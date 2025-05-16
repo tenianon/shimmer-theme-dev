@@ -1,20 +1,24 @@
-import { formatHex, formatHex8 ,interpolate, parse, differenceEuclidean } from 'culori';
+import {
+  formatHex,
+  formatHex8,
+  parseTransparent,
+  interpolate,
+  parse,
+  differenceEuclidean,
+  wcagContrast,
+  converter,
+  parseOklch,
+  oklch,
+} from 'culori';
+import {
+  color as c,
+  semanticTokenColor as stc,
+} from '../src/dark/melancholy/color.ts';
 
-import Color from 'color'
+import { hexAlpha, hexToLightness, hexToChroma } from '../src/utils/culori.ts';
 
+// console.log(Color(c.primary).lighten(0.33).hex());
 
-const c = 'oklch(71.7% 0.25 360)';
-const type = parse('#bf8286');
-const namespace = parse('#c48656');
+const inp = interpolate(['#1aa38f', '#689fc8'], 'oklch');
 
-const gradient = interpolate(['#949c5d', '#bf8286'], 'oklch')(1)
-
-
-
-console.log(formatHex(gradient));
-gradient.l -= 2;
-
-console.log(formatHex(gradient));
-
-console.log(Color('#bf8286').darken(0.3).hex())
-
+console.log(formatHex(inp(0.5)));

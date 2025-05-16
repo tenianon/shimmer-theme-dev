@@ -1,4 +1,4 @@
-import { webColor as wc } from '../../../color.ts';
+import { colorVue } from './color.ts'
 
 export const vue: Editor.Scopes[] = [
   {
@@ -7,7 +7,7 @@ export const vue: Editor.Scopes[] = [
       'source.vue meta.tag.custom entity.name.tag',
     ],
     settings: {
-      foreground: wc.vueComponent,
+      foreground: colorVue.component,
     },
   },
 ];

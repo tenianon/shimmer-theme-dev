@@ -1,8 +1,6 @@
-import {
-  color as c,
-  webColor as wc,
-  semanticTokenColor as stc,
-} from '../../../color.ts';
+import { color as c, semanticTokenColor as stc } from '../../../color.ts';
+import { colorVue } from '../vue/color.ts';
+import { colorHTML } from '../html/color.ts';
 
 export const css: Editor.Scopes[] = [
   {
@@ -70,7 +68,6 @@ export const css: Editor.Scopes[] = [
   {
     scope: [
       'constant.other.color.rgb-value',
-      'punctuation.definition.constant',
       'support.constant.font-name',
       'variable.parameter.url',
     ],
@@ -90,7 +87,7 @@ export const css: Editor.Scopes[] = [
   {
     scope: ['support.constant.parity'],
     settings: {
-      foreground: wc.character,
+      foreground: colorHTML.character,
     },
   },
   {
@@ -99,7 +96,7 @@ export const css: Editor.Scopes[] = [
       'meta.attribute-selector entity.other.attribute-name',
     ],
     settings: {
-      foreground: wc.vueComponent,
+      foreground: colorVue.component,
     },
   },
   {

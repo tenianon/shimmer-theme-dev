@@ -1,4 +1,7 @@
-export const color: Color = {
+import { colorVue } from './editor/language/vue/color.ts';
+
+
+export const color = {
   primary: '#8565ff',
   color0: '#0a0b0a',
   color1: '#1a1b1a',
@@ -18,13 +21,6 @@ export const color: Color = {
   color15: '#fafbfa',
 } as const;
 
-export const webColor: Color = {
-  tag: '#d97189',
-  character: '#6fa125',
-  vueComponent: '#5ead82',
-  reactComponent: '#149eca',
-} as const;
-
 export const semanticTokenColor: {
   [key in Editor.SemanticTokenKey]?: string;
 } = {
@@ -41,7 +37,7 @@ export const semanticTokenColor: {
   interface: '#bf8286',
   type: '#bf8286',
   namespace: '#c48656',
-  typeParameter: '#949c5d',
+  typeParameter: colorVue.component,
   enum: '#389fad',
   enumMember: '#389fad',
   decorator: '#ff0000',
