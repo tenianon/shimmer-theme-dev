@@ -1,8 +1,6 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
-import { colorVue } from '../vue/color.ts';
 import { colorReact } from '../jsx/color.ts';
 import { colorHTML } from '../html/color.ts';
-import { colorMD } from '../md/color.ts';
 
 export const md: Editor.Scopes[] = [
   {
@@ -68,7 +66,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.quote.markdown meta.paragraph.markdown',
     ],
     settings: {
-      foreground: colorReact.component,
+      foreground: stc.property,
     },
   },
   {
@@ -77,8 +75,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.underline.link.image.markdown',
     ],
     settings: {
-      //  foreground: colorMD.mdLink,
-      foreground: stc.enum,
+      foreground: colorReact.component,
     },
   },
   {
@@ -88,9 +85,10 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown punctuation.definition.link.title',
       'text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown',
       'text.html.markdown punctuation.definition.link.markdown',
+      'text.html.markdown punctuation.definition.constant'
     ],
     settings: {
-      foreground: stc.property,
+      foreground: colorHTML.character,
     },
   },
   {
@@ -119,13 +117,13 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown punctuation.definition.table.markdown',
     ],
     settings: {
-      foreground: colorVue.component,
+      foreground: stc.typeParameter,
     },
   },
   {
     scope: ['text.html.markdown meta.separator.markdown'],
     settings: {
-      foreground: colorHTML.character,
+      foreground: stc.enum,
     },
   },
   {
@@ -140,7 +138,7 @@ export const md: Editor.Scopes[] = [
   {
     scope: ['text.html.markdown meta.embedded.math.markdown'],
     settings: {
-      foreground: stc.property,
+      foreground: stc.class,
     },
   },
 ];

@@ -1,5 +1,4 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
-import { colorVue } from '../vue/color.ts';
 import { colorHTML } from '../html/color.ts';
 
 export const css: Editor.Scopes[] = [
@@ -96,7 +95,7 @@ export const css: Editor.Scopes[] = [
       'meta.attribute-selector entity.other.attribute-name',
     ],
     settings: {
-      foreground: colorVue.component,
+      foreground: colorHTML.character,
     },
   },
   {
@@ -108,7 +107,7 @@ export const css: Editor.Scopes[] = [
   {
     scope: ['variable.argument.css', 'variable.css'],
     settings: {
-      foreground: colorHTML.character,
+      foreground: stc.typeParameter,
     },
   },
   {
