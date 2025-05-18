@@ -10,7 +10,7 @@ import { tsx } from './tsx/scope.ts';
 import { vue } from './vue/scope.ts';
 import { json } from './json/scope.ts';
 import { md } from './md/scope.ts';
-import { go } from './go/scope.ts'
+import { go } from './go/scope.ts';
 
 const languages = [
   ...html,
@@ -25,7 +25,7 @@ const languages = [
   ...vue,
   ...json,
   ...md,
-  ...go
+  ...go,
 ];
 
 export { languages };

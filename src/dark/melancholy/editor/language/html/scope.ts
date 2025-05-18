@@ -1,5 +1,5 @@
 import { color as c } from '../../../color.ts';
-import { colorHTML } from "./color.ts";
+import { colorHTML } from './color.ts';
 
 export const html: Editor.Scopes[] = [
   {

@@ -1,5 +1,7 @@
 import { semanticTokenColor as stc } from '../../../color.ts';
 import { colorHTML } from '../html/color.ts';
+import { colorReact } from '../jsx/color.ts';
+import { colorVue } from '../vue/color.ts';
 
 export const go: Editor.Scopes[] = [
   {
@@ -23,11 +25,11 @@ export const go: Editor.Scopes[] = [
   {
     scope: ['source.go entity.name.type.go'],
     settings: {
-      foreground: stc.namespace,
+      foreground: stc.typeParameter,
     },
   },
   {
-    scope: ['source.go storage.type'],
+    scope: ['source.go storage.type', 'source.go entity.name.type.any.go'],
     settings: {
       foreground: stc.type,
     },

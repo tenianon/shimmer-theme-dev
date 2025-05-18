@@ -1,6 +1,7 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
 import { colorReact } from '../jsx/color.ts';
 import { colorHTML } from '../html/color.ts';
+import { colorVue } from '../vue/color.ts';
 
 export const md: Editor.Scopes[] = [
   {
@@ -85,7 +86,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown punctuation.definition.link.title',
       'text.html.markdown meta.link.reference.def.markdown punctuation.definition.constant.markdown',
       'text.html.markdown punctuation.definition.link.markdown',
-      'text.html.markdown punctuation.definition.constant'
+      'text.html.markdown punctuation.definition.constant',
     ],
     settings: {
       foreground: colorHTML.character,
@@ -139,6 +140,12 @@ export const md: Editor.Scopes[] = [
     scope: ['text.html.markdown meta.embedded.math.markdown'],
     settings: {
       foreground: stc.class,
+    },
+  },
+  {
+    scope: ['text.html.markdown constant.other.reference.link.markdown'],
+    settings: {
+      foreground: colorVue.component,
     },
   },
 ];

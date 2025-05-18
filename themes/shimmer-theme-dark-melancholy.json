@@ -872,6 +872,14 @@
     },
     {
       "scope": [
+        "text.html.markdown constant.other.reference.link.markdown"
+      ],
+      "settings": {
+        "foreground": "#5aab81"
+      }
+    },
+    {
+      "scope": [
         "source.go entity.name.type.package.go"
       ],
       "settings": {
@@ -899,12 +907,13 @@
         "source.go entity.name.type.go"
       ],
       "settings": {
-        "foreground": "#c28455"
+        "foreground": "#6ca371"
       }
     },
     {
       "scope": [
-        "source.go storage.type"
+        "source.go storage.type",
+        "source.go entity.name.type.any.go"
       ],
       "settings": {
         "foreground": "#bf8286"

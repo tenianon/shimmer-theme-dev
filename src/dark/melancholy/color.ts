@@ -33,7 +33,7 @@ export const semanticTokenColor: {
   property: '#689fc8',
   number: '#62a193',
   // class: '#b575ed',
-   class: '#4793F5',
+  class: '#4793F5',
   interface: '#bf8286',
   type: '#bf8286',
   namespace: '#c28455',

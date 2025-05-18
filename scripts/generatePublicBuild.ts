@@ -50,7 +50,6 @@ shimmer-theme-dark-neutral.png`;
   fs.writeFileSync(vscodeignorePath, vscodeignore);
 }
 
-
 function generatePublicBuild() {
   if (fs.existsSync(outDir)) {
     fs.rmSync(outDir, { recursive: true });

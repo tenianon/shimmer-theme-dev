@@ -1,3 +1,1 @@
-export const py: Editor.Scopes[] = [
-
-]
+export const py: Editor.Scopes[] = [];

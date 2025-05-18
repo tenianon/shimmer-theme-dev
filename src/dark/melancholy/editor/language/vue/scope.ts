@@ -1,4 +1,4 @@
-import { colorVue } from './color.ts'
+import { colorVue } from './color.ts';
 
 export const vue: Editor.Scopes[] = [
   {
