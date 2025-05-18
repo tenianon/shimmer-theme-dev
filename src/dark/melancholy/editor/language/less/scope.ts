@@ -1,4 +1,5 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
+import { colorHTML } from "../html/color.ts";
 
 export const less: Editor.Scopes[] = [
   {
@@ -16,7 +17,7 @@ export const less: Editor.Scopes[] = [
   {
     scope: ['support.other.variable.less'],
     settings: {
-      foreground: stc.class,
+      foreground: colorHTML.character,
     },
   },
   {

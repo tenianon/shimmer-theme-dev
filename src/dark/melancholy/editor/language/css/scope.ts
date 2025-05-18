@@ -87,7 +87,7 @@ export const css: Editor.Scopes[] = [
   {
     scope: ['support.constant.parity'],
     settings: {
-      foreground: colorHTML.character,
+      foreground: stc.class,
     },
   },
   {
@@ -108,7 +108,7 @@ export const css: Editor.Scopes[] = [
   {
     scope: ['variable.argument.css', 'variable.css'],
     settings: {
-      foreground: stc.class,
+      foreground: colorHTML.character,
     },
   },
   {

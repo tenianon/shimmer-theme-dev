@@ -1,21 +1,28 @@
 <script setup lang="ts">
-
 type Foo = {
-  name: string  
-}
-
+  name: string;
+};
 
 type DeepPick<T, K extends string> = K extends `${infer First}.${infer Rest}`
   ? First extends keyof T
     ? { [P in First]: DeepPick<T[First], Rest> }
     : never
   : K extends keyof T
-  ? { [P in K]: T[P] }
-  : never;
+    ? { [P in K]: T[P] }
+    : never;
 
-const a = 1000000
+function deepPick<T, K extends string>(
+  obj: T,
+  key: K,
+  value: any,
+  pass: number,
+): DeepPick<T, K> {
+  const a = value | pass;
 
+  return key.split('.').reduce((acc, key) => acc[key], obj) as DeepPick<T, K>;
+}
 
+const a = 1000000;
 </script>
 <template>
   <div>
@@ -28,7 +35,7 @@ const a = 1000000
 // 变量
 @primary-color: #3498db;
 @padding: 10px;
-@font-stack: "Helvetica, sans-serif";
+@font-stack: 'Helvetica, sans-serif';
 
 // 嵌套
 .navbar {
@@ -132,10 +139,10 @@ const a = 1000000
 }
 
 // 导入其他 LESS 文件
-@import "variables.less";
-@import (reference) "mixins.less";
-@import (inline) "reset.css";
-@import (less) "styles.less";
+@import 'variables.less';
+@import (reference) 'mixins.less';
+@import (inline) 'reset.css';
+@import (less) 'styles.less';
 
 // 作用域规则
 @color: black;
@@ -160,5 +167,4 @@ const a = 1000000
   .loop-steps(@i + 1, @max);
 }
 .loop-steps(1, 5);
-
 </style>

@@ -1,10 +1,10 @@
-var path = require("path");
-import { channel } from "process";
-import("./module.js").then((mod) => {
+var path = require('path');
+import { channel } from 'process';
+import('./module.js').then((mod) => {
   return mod;
 });
 
-var variable = "Hello World";
+var variable = 'Hello World';
 let number = 19009;
 let float = 19.99;
 let boolean = true;
@@ -22,7 +22,7 @@ const undef = undefined;
 const nul = null;
 
 const arr = [
-  "str",
+  'str',
   999,
   NaN,
   Infinity,
@@ -30,50 +30,50 @@ const arr = [
   false,
   undefined,
   null,
-  { property: "property" },
-  ["str", 999, NaN],
+  { property: 'property' },
+  ['str', 999, NaN],
 ];
 
 const [first, third] = [10, 20, 30];
 
 const arr2 = [...arr, 3, 4];
 
-const msg = boolean ? "yes" : "no";
+const msg = boolean ? 'yes' : 'no';
 
 const obj = {
-  str: "str",
+  str: 'str',
   num: 999,
   bool: true,
   time: new Date(),
-  arr: ["str", 999, NaN],
+  arr: ['str', 999, NaN],
   obj2: { property: 18 },
   fn: function (arg1) {
     return arg1;
   },
   afn: () => {
-    return "str";
+    return 'str';
   },
 };
 
 const obj2 = { ...obj, b: 99 };
 
-const { str: myStr, missing = 42 } = { str: "hello" };
+const { str: myStr, missing = 42 } = { str: 'hello' };
 
 [10, 20, 30].at(-1);
 
-"Hello".at(-2);
+'Hello'.at(-2);
 
-Object.hasOwn({ a: 1 }, "a");
+Object.hasOwn({ a: 1 }, 'a');
 
 arr.property.getFunction = function () {};
 
 function baseFn(arg0, arg1, cb) {
   const localVar = arg0;
-  arg1.name = "new name";
+  arg1.name = 'new name';
   arg1.obj = {
-    property: "property",
+    property: 'property',
   };
-  arg1.arr = ["str", 999, NaN];
+  arg1.arr = ['str', 999, NaN];
 
   arg1.fn();
 
@@ -111,14 +111,14 @@ class Parent {
 
   constructor(name) {
     this.name = name;
-    Parent.var = "static var";
+    Parent.var = 'static var';
   }
 
   static staticMethod() {
     try {
-      throw new Error("Low-level error");
+      throw new Error('Low-level error');
     } catch (e) {
-      throw new Error("High-level error", { cause: e });
+      throw new Error('High-level error', { cause: e });
     }
   }
 
@@ -149,16 +149,16 @@ Promise.resolve().then(() => {});
 
 await arrowFn(10);
 
-new Intl.NumberFormat("ja-JP", { style: "currency", currency: "JPY" }).format(
-  123456
+new Intl.NumberFormat('ja-JP', { style: 'currency', currency: 'JPY' }).format(
+  123456,
 );
 
-fs.rewriteFile("path/to/file", "content", (err) => {});
+fs.rewriteFile('path/to/file', 'content', (err) => {});
 
 window.document.body.innerHTML = `<h1>${variable}</h1>`;
 window.setTimeout(() => {});
 setInterval(() => {}, 1000);
-globalThis.setTimeout(() => console.log("OK"));
+globalThis.setTimeout(() => console.log('OK'));
 requestAnimationFrame(() => {});
 
 arr.forEach((item, index, arr) => {
@@ -178,11 +178,11 @@ for (const element of object) {
   }
 }
 
-const val = null ?? "default";
+const val = null ?? 'default';
 
 console.log(user.profile?.name);
 
-const target = { message: "Hello" };
+const target = { message: 'Hello' };
 const handler = {
   get(obj, prop, receiver) {
     console.log(`get ${prop}`);
@@ -249,20 +249,20 @@ module.exports.helper = {
 };
 
 exports = module.exports = {
-  apiKey: "12345",
-  apiUrl: "https://api.example.com",
+  apiKey: '12345',
+  apiUrl: 'https://api.example.com',
 };
 
-const a = document.querySelector(".monaco-grid-view");
-const b = document.createElement("div");
-b.style.width = "100%";
-b.style.height = "100%";
-b.style.position = "absolute";
-b.style.top = "0px";
-b.style.left = "0px";
+const a = document.querySelector('.monaco-grid-view');
+const b = document.createElement('div');
+b.style.width = '100%';
+b.style.height = '100%';
+b.style.position = 'absolute';
+b.style.top = '0px';
+b.style.left = '0px';
 b.style.zIndex = 999999;
 b.style.opacity = 0.08;
 b.style.backgroundImage = `url(https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png)`;
-b.style.pointerEvents = 'none'
+b.style.pointerEvents = 'none';
 
-a.append(b)
+a.append(b);

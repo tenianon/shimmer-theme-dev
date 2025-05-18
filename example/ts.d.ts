@@ -15,6 +15,25 @@ type DeepReadonly<T> = {
     : T[K];
 };
 
+
+export namespace MyNamespace {
+  export type User = {
+    name: string;
+    address: {
+      city: string;
+      country: string;
+    };
+    updateName: (newName: string) => void;
+  };
+}
+
+type A = MyNamespace.User;
+
+
+export class NestedArrays {
+  [key: number]: number[];
+}
+
 type User = {
   name: string;
   address: {

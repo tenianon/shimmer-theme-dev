@@ -1,6 +1,5 @@
 import { colorVue } from './editor/language/vue/color.ts';
 
-
 export const color = {
   primary: '#8565ff',
   color0: '#0a0b0a',
@@ -24,20 +23,21 @@ export const color = {
 export const semanticTokenColor: {
   [key in Editor.SemanticTokenKey]?: string;
 } = {
-  variable: '#aa88c8',
-  parameter: '#bc9b5a',
-  keyword: '#c975af',
+  variable: '#a980cd',
+  parameter: '#ba9959',
+  keyword: '#c27cb3',
   string: '#1aa38f',
   comment: color.color6,
   function: '#7c89f0',
   method: '#7c89f0',
   property: '#689fc8',
   number: '#62a193',
-  class: '#b575ed',
+  // class: '#b575ed',
+   class: '#4793F5',
   interface: '#bf8286',
   type: '#bf8286',
-  namespace: '#c48656',
-  typeParameter: colorVue.component,
+  namespace: '#c28455',
+  typeParameter: '#6ca371',
   enum: '#389fad',
   enumMember: '#389fad',
   decorator: '#ff0000',

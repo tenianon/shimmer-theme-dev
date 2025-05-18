@@ -1,3 +1,3 @@
 export const colorVue = {
-  component: '#5ead82'
-} as const
+  component: '#5aab81',
+} as const;

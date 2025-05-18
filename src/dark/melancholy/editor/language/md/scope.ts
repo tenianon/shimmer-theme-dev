@@ -77,7 +77,8 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.underline.link.image.markdown',
     ],
     settings: {
-      foreground: colorMD.mdLink,
+      //  foreground: colorMD.mdLink,
+      foreground: stc.enum,
     },
   },
   {
@@ -89,7 +90,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown punctuation.definition.link.markdown',
     ],
     settings: {
-      foreground: stc.enum,
+      foreground: stc.property,
     },
   },
   {

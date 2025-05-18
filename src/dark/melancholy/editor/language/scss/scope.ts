@@ -1,4 +1,5 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
+import { colorHTML } from '../html/color.ts';
 
 export const scss: Editor.Scopes[] = [
   {
@@ -49,7 +50,7 @@ export const scss: Editor.Scopes[] = [
   {
     scope: ['variable.scss'],
     settings: {
-      foreground: stc.class,
+      foreground: colorHTML.character,
     },
   },
   {
