@@ -1,7 +1,7 @@
 import { color as c } from '../../../color.ts';
 import { colorHTML } from './color.ts';
 
-export const html: Editor.Scopes[] = [
+export const scopeHTML: Editor.Scopes[] = [
   {
     scope: ['text.html.derivative meta.tag'],
     settings: {

@@ -1,9 +1,9 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
-import { colorReact } from '../jsx/color.ts';
+import { colorJSX } from '../jsx/color.ts';
 import { colorHTML } from '../html/color.ts';
 import { colorVue } from '../vue/color.ts';
 
-export const md: Editor.Scopes[] = [
+export const scopeMD: Editor.Scopes[] = [
   {
     scope: ['meta.paragraph.markdown'],
     settings: {
@@ -76,7 +76,7 @@ export const md: Editor.Scopes[] = [
       'text.html.markdown markup.underline.link.image.markdown',
     ],
     settings: {
-      foreground: colorReact.component,
+      foreground: colorJSX.component,
     },
   },
   {

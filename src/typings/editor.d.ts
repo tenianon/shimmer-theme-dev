@@ -46,7 +46,6 @@ type TokenGroupScopeTypesLegend =
   | 'functions'
   | 'variables';
 
-type Modifiers = `.${string}`;
 type SemanticTokenType =
   | `${SemanticTokenTypesLegend}`
   | `${SemanticTokenTypesLegend}.${string}`
@@ -59,11 +58,19 @@ declare namespace Editor {
   export type SemanticTokenKey = SemanticTokenType;
 
   export type SemanticTokenMap = {
-    [key in SemanticTokenKey]?: {
+    [key: string]: {
       foreground: string;
       fontStyle?: FontStyle;
     };
-  };
+  } & Partial<
+    Record<
+      SemanticTokenKey,
+      {
+        foreground: string;
+        fontStyle?: FontStyle;
+      }
+    >
+  >;
 
   export type TokenGroupScopesMap = {
     [key in TokenGroupScopeKey]?: {

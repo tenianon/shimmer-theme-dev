@@ -151,21 +151,6 @@
     "number": {
       "foreground": "#62a193"
     },
-    "class:html": {
-      "foreground": "#4793f5"
-    },
-    "class.declaration:vue": {
-      "foreground": "#4793f5"
-    },
-    "class:javascript": {
-      "foreground": "#4793f5"
-    },
-    "class:typescript": {
-      "foreground": "#4793f5"
-    },
-    "class:typescriptreact": {
-      "foreground": "#4793f5"
-    },
     "interface": {
       "foreground": "#bf8286"
     },
@@ -183,21 +168,42 @@
     },
     "enumMember": {
       "foreground": "#389fad"
+    },
+    "class:html": {
+      "foreground": "#4495eb"
+    },
+    "class:javascript": {
+      "foreground": "#4495eb"
+    },
+    "class:typescript": {
+      "foreground": "#4495eb"
+    },
+    "class:typescriptreact": {
+      "foreground": "#4495eb"
+    },
+    "class.declaration:vue": {
+      "foreground": "#4495eb"
+    },
+    "class:python": {
+      "foreground": "#4495eb"
+    },
+    "module:python": {
+      "foreground": "#c28455"
+    },
+    "class.builtin:python": {
+      "foreground": "#149dc9"
+    },
+    "class.typeHint.builtin:python": {
+      "foreground": "#bf8286"
+    },
+    "magicFunction:python": {
+      "foreground": "#d97189"
+    },
+    "selfParameter:python": {
+      "foreground": "#6ca371"
     }
   },
   "tokenColors": [
-    {
-      "scope": [
-        "punctuation",
-        "meta.brace",
-        "keyword.operator",
-        "storage.type.function.arrow",
-        "constant.language.import-export-all"
-      ],
-      "settings": {
-        "foreground": "#8a8b8a"
-      }
-    },
     {
       "name": "comments",
       "scope": [
@@ -257,6 +263,18 @@
       ],
       "settings": {
         "foreground": "#a980cd"
+      }
+    },
+    {
+      "scope": [
+        "punctuation",
+        "meta.brace",
+        "keyword.operator",
+        "storage.type.function.arrow",
+        "constant.language.import-export-all"
+      ],
+      "settings": {
+        "foreground": "#8a8b8a"
       }
     },
     {
@@ -380,7 +398,7 @@
         "support.constant.parity"
       ],
       "settings": {
-        "foreground": "#4793f5"
+        "foreground": "#4495eb"
       }
     },
     {
@@ -630,7 +648,7 @@
         "meta.class.js entity.other.inherited-class.js"
       ],
       "settings": {
-        "foreground": "#4793f5"
+        "foreground": "#4495eb"
       }
     },
     {
@@ -657,7 +675,7 @@
         "entity.other.inherited-class.ts"
       ],
       "settings": {
-        "foreground": "#4793f5"
+        "foreground": "#4495eb"
       }
     },
     {
@@ -703,7 +721,7 @@
         "entity.other.inherited-class.tsx"
       ],
       "settings": {
-        "foreground": "#4793f5"
+        "foreground": "#4495eb"
       }
     },
     {
@@ -867,7 +885,7 @@
         "text.html.markdown meta.embedded.math.markdown"
       ],
       "settings": {
-        "foreground": "#4793f5"
+        "foreground": "#4495eb"
       }
     },
     {
@@ -925,6 +943,79 @@
       ],
       "settings": {
         "foreground": "#c27cb3"
+      }
+    },
+    {
+      "scope": [
+        "source.python constant.other.ellipsis.python",
+        "source.python constant.character.format.placeholder.other.python"
+      ],
+      "settings": {
+        "foreground": "#8a8b8a"
+      }
+    },
+    {
+      "scope": [
+        "source.python string.quoted.docstring.multi.python keyword.control.flow.python"
+      ],
+      "settings": {
+        "foreground": "#1aa38f"
+      }
+    },
+    {
+      "scope": [
+        "source.python meta.attribute.python"
+      ],
+      "settings": {
+        "foreground": "#689fc8"
+      }
+    },
+    {
+      "scope": [
+        "source.python support.variable.magic.python"
+      ],
+      "settings": {
+        "foreground": "#a980cd"
+      }
+    },
+    {
+      "scope": [
+        "source.python keyword.operator.logical"
+      ],
+      "settings": {
+        "foreground": "#c27cb3"
+      }
+    },
+    {
+      "scope": [
+        "source.python constant.character.escape.python"
+      ],
+      "settings": {
+        "foreground": "#80a341"
+      }
+    },
+    {
+      "scope": [
+        "source.python meta.function-call.generic.python"
+      ],
+      "settings": {
+        "foreground": "#7c89f0"
+      }
+    },
+    {
+      "scope": [
+        "source.python support.type.metaclass.python"
+      ],
+      "settings": {
+        "foreground": "#4495eb"
+      }
+    },
+    {
+      "scope": [
+        "source.python meta.indexed-name.python"
+      ],
+      "settings": {
+        "foreground": "#a980cd"
       }
     }
   ]

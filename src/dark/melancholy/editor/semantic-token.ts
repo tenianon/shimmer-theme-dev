@@ -32,21 +32,6 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   number: {
     foreground: stc.number,
   },
-  'class:html': {
-    foreground: stc.class,
-  },
-  'class.declaration:vue': {
-    foreground: stc.class,
-  },
-  'class:javascript': {
-    foreground: stc.class,
-  },
-  'class:typescript': {
-    foreground: stc.class,
-  },
-  'class:typescriptreact': {
-    foreground: stc.class,
-  },
   interface: {
     foreground: stc.interface,
   },
@@ -65,6 +50,9 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   enumMember: {
     foreground: stc.enumMember,
   },
+  // class: {
+  //   foreground: stc.class,
+  // }
   // decorator: {
   //   foreground: stc.decorator,
   // },
@@ -88,6 +76,6 @@ const semanticTokenMap: Editor.SemanticTokenMap = {
   // },
 };
 
-const semanticToken = semanticTokenMap;
+const defaultSemanticTokens = semanticTokenMap;
 
-export { semanticToken };
+export { defaultSemanticTokens };

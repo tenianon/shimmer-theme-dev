@@ -1,5 +1,3 @@
-import { colorVue } from './editor/language/vue/color.ts';
-
 export const color = {
   primary: '#8565ff',
   color0: '#0a0b0a',
@@ -32,8 +30,7 @@ export const semanticTokenColor: {
   method: '#7c89f0',
   property: '#689fc8',
   number: '#62a193',
-  // class: '#b575ed',
-  class: '#4793F5',
+  class: '#4495eb',
   interface: '#bf8286',
   type: '#bf8286',
   namespace: '#c28455',

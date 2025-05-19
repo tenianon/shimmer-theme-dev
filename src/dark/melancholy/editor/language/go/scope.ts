@@ -1,9 +1,7 @@
-import { semanticTokenColor as stc } from '../../../color.ts';
+import { semanticTokenColor as stc, color as c } from '../../../color.ts';
 import { colorHTML } from '../html/color.ts';
-import { colorReact } from '../jsx/color.ts';
-import { colorVue } from '../vue/color.ts';
 
-export const go: Editor.Scopes[] = [
+export const scopeGo: Editor.Scopes[] = [
   {
     scope: ['source.go entity.name.type.package.go'],
     settings: {

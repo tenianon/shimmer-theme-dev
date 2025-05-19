@@ -1,6 +1,6 @@
 import { colorVue } from './color.ts';
 
-export const vue: Editor.Scopes[] = [
+export const scopeVue: Editor.Scopes[] = [
   {
     scope: [
       'source.vue meta.tag.other entity.name.tag',

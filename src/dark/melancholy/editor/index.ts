@@ -1,10 +1,17 @@
-import { semanticToken } from './semantic-token.ts';
-import { languages } from './language/index.ts';
-import { symbolScope, tokenScopes } from './textmate-scope.ts';
+import { defaultSemanticTokens } from './semantic-token.ts';
+import { scopes, semantics } from './language/index.ts';
+import { symbolScope, defaultTokenScopes } from './textmate-scope.ts';
 
-const semanticTokenColor: Editor.Semantic = semanticToken;
+const semanticTokenColor: Editor.Semantic = {
+  ...defaultSemanticTokens,
+  ...semantics,
+};
 
-const tokenColor: Editor.Scopes[] = [symbolScope, ...tokenScopes, ...languages];
+const tokenColor: Editor.Scopes[] = [
+  ...defaultTokenScopes,
+  symbolScope,
+  ...scopes,
+];
 
 for (let i = 0; i < tokenColor.length; i++) {
   tokenColor[i].settings.foreground =

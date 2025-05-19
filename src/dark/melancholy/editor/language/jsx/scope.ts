@@ -1,12 +1,12 @@
 import { color as c } from '../../../color.ts';
-import { colorReact } from './color.ts';
+import { colorJSX } from './color.ts';
 import { colorHTML } from '../html/color.ts';
 
-export const jsx: Editor.Scopes[] = [
+export const scopeJSX: Editor.Scopes[] = [
   {
     scope: ['support.class.component'],
     settings: {
-      foreground: colorReact.component,
+      foreground: colorJSX.component,
     },
   },
   {

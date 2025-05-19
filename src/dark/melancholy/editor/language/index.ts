@@ -1,31 +1,48 @@
-import { html } from './html/scope.ts';
-import { css } from './css/scope.ts';
-import { js } from './js/scope.ts';
-import { scss } from './scss/scope.ts';
-import { less } from './less/scope.ts';
-import { jsdoc } from './jsdoc/scope.ts';
-import { ts } from './ts/scope.ts';
-import { jsx } from './jsx/scope.ts';
-import { tsx } from './tsx/scope.ts';
-import { vue } from './vue/scope.ts';
-import { json } from './json/scope.ts';
-import { md } from './md/scope.ts';
-import { go } from './go/scope.ts';
+import { scopeHTML } from './html/scope.ts';
+import { semanticHTML } from './html/semantic.ts';
+import { scopeCSS } from './css/scope.ts';
+import { scopeJS } from './js/scope.ts';
+import { semanticJS } from './js/semantic.ts';
+import { scopeScss } from './scss/scope.ts';
+import { scopeLess } from './less/scope.ts';
+import { scopeJSDoc } from './jsdoc/scope.ts';
+import { scopeTS } from './ts/scope.ts';
+import { semanticTS } from './ts/semantic.ts';
+import { scopeJSX } from './jsx/scope.ts';
+import { scopeTSX } from './tsx/scope.ts';
+import { semanticTSX } from './tsx/semantic.ts';
+import { scopeVue } from './vue/scope.ts';
+import { semanticVue } from './vue/semantic.ts';
+import { scopeJSON } from './json/scope.ts';
+import { scopeMD } from './md/scope.ts';
+import { scopeGo } from './go/scope.ts';
+import { scopePy } from './py/scope.ts';
+import { semanticPy } from './py/semantic.ts';
 
-const languages = [
-  ...html,
-  ...css,
-  ...scss,
-  ...less,
-  ...jsdoc,
-  ...js,
-  ...ts,
-  ...jsx,
-  ...tsx,
-  ...vue,
-  ...json,
-  ...md,
-  ...go,
+const scopes = [
+  ...scopeHTML,
+  ...scopeCSS,
+  ...scopeScss,
+  ...scopeLess,
+  ...scopeJSDoc,
+  ...scopeJS,
+  ...scopeTS,
+  ...scopeJSX,
+  ...scopeTSX,
+  ...scopeVue,
+  ...scopeJSON,
+  ...scopeMD,
+  ...scopeGo,
+  ...scopePy,
 ];
 
-export { languages };
+const semantics = {
+  ...semanticHTML,
+  ...semanticJS,
+  ...semanticTS,
+  ...semanticTSX,
+  ...semanticVue,
+  ...semanticPy,
+};
+
+export { scopes, semantics };

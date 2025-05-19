@@ -81,6 +81,6 @@ const generateTextMateScopes = () => {
   return scopes;
 };
 
-const tokenScopes = generateTextMateScopes();
+const defaultTokenScopes = generateTextMateScopes();
 
-export { symbolScope, tokenScopes, tokenGroupScopesMap };
+export { symbolScope, defaultTokenScopes, tokenGroupScopesMap };

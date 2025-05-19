@@ -1,6 +1,6 @@
 import { semanticTokenColor as stc } from '../../../color.ts';
 
-export const tsx: Editor.Scopes[] = [
+export const scopeTSX: Editor.Scopes[] = [
   {
     scope: [
       'support.type.builtin.tsx',
