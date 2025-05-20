@@ -18,7 +18,9 @@ const outFileList = await globby([
   'README_zh-cn.md',
   'README.md',
   'shimmer-theme-dark-melancholy.png',
+  'shimmer-theme-dark-melancholy-block.png',
   'shimmer-theme-dark-neutral.png',
+  'shimmer-theme-dark-neutral-block.png',
 ]);
 
 function changePublicPackage() {

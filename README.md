@@ -2,48 +2,94 @@
 
 <div align="center">
 
-  ![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)
+![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)
 
-  <br/> <br/>
+<br/>
+
+<div style="display: flex; justify-content: center; align-items: center">
+  <div style="display: grid; gap: 4px; grid-template-columns: repeat(6, 1fr)">
+    <div style="width: 20px; height: 20px; background-color: #755ade;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #c28455;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #ba9959;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #bf8286;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #1aa38f;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #6ca371;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #62a193;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #389fad;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #c27cb3;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #a980cd;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #7c89f0;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #689fc8;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #4495eb;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #d97189;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #80a341;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #149eca;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #5aab81;border-radius:4px;"></div>
+  </div>
+
+</div>
+
+<br/> <br/>
+
   <h1>Shimmer Theme README</h1>
   <br/>
 
-  [English Docs]
-    [中文文档](https://github.com/tenianon/shimmer-theme/blob/main/README_zh-cn.md)
-    
+[English Docs]
+[中文文档](https://github.com/tenianon/shimmer-theme/blob/main/README_zh-cn.md)
+
 </div>
 
 ## Effects
 
-
 #### Dark Melancholy
+
 <div align="center">
 
-  ![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)
+![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/x1qHKMX3/Pix-Pin-2025-05-21-05-06-31.png)
+
+</div>
+
+#### Dark Melancholy Block
+
+<div align="center">
+
+![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/B651qCz4/Pix-Pin-2025-05-21-05-08-09.png)
+
 </div>
 
 #### Dark Neutral
+
 <div align="center">
 
-  ![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)
+![shimmer-theme-dark-neutral.png](https://i.postimg.cc/wTNY3bVX/Pix-Pin-2025-05-21-05-14-24.png)
 
 </div>
 
-## Install
+#### Dark Neutral Block
+
+<div align="center">
+
+![shimmer-theme-dark-neutral.png](https://i.postimg.cc/ydCZ4GvL/Pix-Pin-2025-05-21-05-08-46.png)
+
+</div>
+
+## Recommend
+
+It is recommended to turn off **Bracket Pair Coloring** when using this theme, Open `Manage → Settings` → Search for `bracket pair` → Uncheck Controls whether bracket pair colorization is enabled or not.
+
+## Using
 
 #### Method 1
 
 After the installation is complete, press `ctrl + shift + p` to display all command pop-ups, enter `Color Theme` in the input box, find the option `Preferences: Color Theme` in the result bar, press Enter, and select the theme with the name starting with `Shimmer Theme` in the color theme list.
 
-
-
 #### Method 2
 
-Click `Manage -> Themes -> Color Theme`, and select the theme that starts with `Shimmer Theme` in the color theme list pop-up window.
+Open `Manage` -> `Themes` -> `Color Theme`, and select the theme that starts with `Shimmer Theme` in the color theme list pop-up window.
 
 ## Modify color scheme
 
-Click `Manage -> Settings -> Open Settings(Json) -> Open Settings (UI) [icon column on the right side of the tab bar]` and add the following content to the `setting.json` file
+Open `Manage` -> `Settings` -> `Open Settings(Json)` -> `Open Settings (UI)` **[icon column on the right side of the tab bar]** and add the following content to the `setting.json` file
 
 #### Example
 
