@@ -4,31 +4,6 @@
 
 ![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)
 
-<br/>
-
-<div style="display: flex; justify-content: center; align-items: center">
-  <div style="display: grid; gap: 4px; grid-template-columns: repeat(6, 1fr)">
-    <div style="width: 20px; height: 20px; background-color: #755ade;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #c28455;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #ba9959;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #bf8286;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #1aa38f;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #6ca371;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #62a193;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #389fad;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #c27cb3;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #a980cd;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #7c89f0;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #689fc8;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #4495eb;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #d97189;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #80a341;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #149eca;border-radius:4px;"></div>
-    <div style="width: 20px; height: 20px; background-color: #5aab81;border-radius:4px;"></div>
-  </div>
-
-</div>
-
 <br/> <br/>
 
   <h1>Shimmer Theme README</h1>
