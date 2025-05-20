@@ -5,7 +5,7 @@ import {
 import { workbenchColorCustomizations } from './workbench/index.ts';
 import { hexToLightness } from '../../utils/culori.ts';
 
-const lightnessArray = [0, -5, 5];
+const lightnessArray = [0, -5, 5, 10];
 
 const themeList: Theme[] = [];
 

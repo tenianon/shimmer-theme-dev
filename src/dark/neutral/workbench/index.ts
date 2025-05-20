@@ -63,7 +63,7 @@ const customizations: WorkbenchColorCustomizations = {
   'editorGroup.dropBackground': hexAlpha(c.color4, 0.36),
   'editorGroupHeader.tabsBackground': c.color2,
   'editorGroupHeader.tabsBorder': c.color3,
-  'tab.activeBackground': c.color3,
+  'tab.activeBackground': hexAlpha(c.primary, 0.08),
   'tab.activeForeground': c.color10,
   'tab.border': c.color3,
   'tab.activeBorderTop': c.primary,

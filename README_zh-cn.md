@@ -2,33 +2,58 @@
 
 <div align="center">
 
-  ![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)
+![icon.png](https://i.postimg.cc/13dVCSNm/icon.png)
 
-  <br/> <br/>
-  <h1>Shimmer Theme README</h1>
-  <br/>
+<br/>
 
-  [English Docs](https://github.com/tenianon/shimmer-theme/blob/main/README.md)
-    [中文文档]
+<div style="display: flex; justify-content: center; align-items: center">
+  <div style="display: grid; gap: 4px; grid-template-columns: repeat(6, 1fr)">
+    <div style="width: 20px; height: 20px; background-color: #755ade;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #c28455;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #ba9959;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #bf8286;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #1aa38f;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #6ca371;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #62a193;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #389fad;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #c27cb3;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #a980cd;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #7c89f0;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #689fc8;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #4495eb;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #d97189;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #80a341;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #149eca;border-radius:4px;"></div>
+    <div style="width: 20px; height: 20px; background-color: #5aab81;border-radius:4px;"></div>
+  </div>
 
 </div>
 
+<br/> <br/>
 
-1
+  <h1>Shimmer Theme README</h1>
+  <br/>
 
+[English Docs](https://github.com/tenianon/shimmer-theme/blob/main/README.md)
+[中文文档]
+
+</div>
 
 ## 效果图
 
 #### Dark Melancholy
+
 <div align="center">
 
-  ![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)
+![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/FFMGc0w9/Pix-Pin-2025-05-09-05-42-10.png)
+
 </div>
 
 #### Dark Neutral
+
 <div align="center">
 
-  ![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)
+![shimmer-theme-dark-neutral.png](https://i.postimg.cc/3r4ndtSS/Pix-Pin-2025-05-09-05-41-35.png)
 
 </div>
 

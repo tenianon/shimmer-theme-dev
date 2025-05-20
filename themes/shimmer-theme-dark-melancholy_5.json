@@ -55,7 +55,7 @@
     "editorGroup.dropBackground": "#4a4b4a5c",
     "editorGroupHeader.tabsBackground": "#2a2b2a",
     "editorGroupHeader.tabsBorder": "#3a3b3a",
-    "tab.activeBackground": "#3a3b3a",
+    "tab.activeBackground": "#8565ff14",
     "tab.activeForeground": "#aaabaa",
     "tab.border": "#3a3b3a",
     "tab.activeBorderTop": "#8565ff",

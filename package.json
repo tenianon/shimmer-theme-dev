@@ -105,6 +105,11 @@
         "path": "./themes/shimmer-theme-dark-neutral_5.json"
       },
       {
+        "label": "Shimmer Theme Dark Neutral 10",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shimmer-theme-dark-neutral_10.json"
+      },
+      {
         "label": "Shimmer Theme Dark Neutral Block",
         "uiTheme": "vs-dark",
         "path": "./themes/shimmer-theme-dark-neutral-block.json"
@@ -118,6 +123,11 @@
         "label": "Shimmer Theme Dark Neutral Block 05",
         "uiTheme": "vs-dark",
         "path": "./themes/shimmer-theme-dark-neutral-block_5.json"
+      },
+      {
+        "label": "Shimmer Theme Dark Neutral Block 10",
+        "uiTheme": "vs-dark",
+        "path": "./themes/shimmer-theme-dark-neutral-block_10.json"
       }
     ]
   },
