@@ -1,6 +1,6 @@
 import { semanticTokenColor as stc } from '../../../color.ts';
 
-export const scopeJSDoc: Editor.Scopes[] = [
+export const scopeJSDoc: Editor.Scope[] = [
   {
     scope: ['storage.type.class.jsdoc'],
     settings: {

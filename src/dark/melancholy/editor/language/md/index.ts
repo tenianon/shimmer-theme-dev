@@ -1,9 +1,9 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
-import { colorJSX } from '../jsx/color.ts';
-import { colorHTML } from '../html/color.ts';
-import { colorVue } from '../vue/color.ts';
+import { colorJSX } from '../jsx/index.ts';
+import { colorHTML } from '../html/index.ts';
+import { colorVue } from '../vue/index.ts';
 
-export const scopeMD: Editor.Scopes[] = [
+export const scopeMD: Editor.Scope[] = [
   {
     scope: ['meta.paragraph.markdown'],
     settings: {

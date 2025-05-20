@@ -10,7 +10,7 @@ declare interface Theme {
   colors?: WorkbenchColorCustomizations;
   semanticHighlighting?: boolean;
   semanticTokenColors?: Editor.Semantic;
-  tokenColors?: Editor.Scopes[];
+  tokenColors?: Editor.Scope[];
   label: string;
   uiTheme: UiTheme;
 }

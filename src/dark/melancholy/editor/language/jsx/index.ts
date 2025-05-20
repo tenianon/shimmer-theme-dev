@@ -1,8 +1,11 @@
 import { color as c } from '../../../color.ts';
-import { colorJSX } from './color.ts';
-import { colorHTML } from '../html/color.ts';
+import { colorHTML } from '../html/index.ts';
 
-export const scopeJSX: Editor.Scopes[] = [
+export const colorJSX = {
+  component: '#149eca',
+} as const;
+
+export const scopeJSX: Editor.Scope[] = [
   {
     scope: ['support.class.component'],
     settings: {

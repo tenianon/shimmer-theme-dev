@@ -1,6 +1,6 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
 
-export const scopeLess: Editor.Scopes[] = [
+export const scopeLess: Editor.Scope[] = [
   {
     scope: ['punctuation.definition.entity.less'],
     settings: {

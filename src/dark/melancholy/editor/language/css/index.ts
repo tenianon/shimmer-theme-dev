@@ -1,7 +1,7 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
-import { colorHTML } from '../html/color.ts';
+import { colorHTML } from '../html/index.ts';
 
-export const scopeCSS: Editor.Scopes[] = [
+export const scopeCSS: Editor.Scope[] = [
   {
     scope: [
       'punctuation.definition.entity.css',

@@ -1,6 +1,13 @@
 import { semanticTokenColor as stc } from '../../../color.ts';
 
-export const scopeTS: Editor.Scopes[] = [
+export const semanticTS: Editor.SemanticTokenMap = {
+  'class:typescript': {
+    foreground: stc.class,
+  },
+};
+
+
+export const scopeTS: Editor.Scope[] = [
   {
     scope: [
       'support.type.builtin.ts',

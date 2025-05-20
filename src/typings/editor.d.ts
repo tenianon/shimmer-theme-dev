@@ -87,13 +87,12 @@ declare namespace Editor {
     };
   };
 
-  export type Scopes = {
+  export type Scope = {
     name?: string;
     scope: string | Array<string>;
     settings: {
       foreground?: string;
       fontStyle?: FontStyle;
     };
-    [key: string]: any;
   };
 }

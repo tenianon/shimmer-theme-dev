@@ -1,7 +1,17 @@
-import { color as c } from '../../../color.ts';
-import { colorHTML } from './color.ts';
+import { color as c, semanticTokenColor as stc } from '../../../color.ts';
 
-export const scopeHTML: Editor.Scopes[] = [
+export const colorHTML = {
+  tag: '#d97189',
+  character: '#80a341',
+} as const;
+
+export const semanticHTML: Editor.SemanticTokenMap = {
+  'class:html': {
+    foreground: stc.class,
+  },
+};
+
+export const scopeHTML: Editor.Scope[] = [
   {
     scope: ['text.html.derivative meta.tag'],
     settings: {

@@ -26,6 +26,14 @@ const tokenGroupScopesMap: Editor.TokenGroupScopesMap = {
     scope: ['constant.numeric'],
     foreground: stc.number,
   },
+  functions: {
+    scope: ['entity.name.function', 'support.function'],
+    foreground: stc.function,
+  },
+  variables: {
+    scope: ['variable', 'entity.name.variable'],
+    foreground: stc.variable,
+  },
   // types: {
   //   scope: [
   //     "entity.name.type",
@@ -35,17 +43,9 @@ const tokenGroupScopesMap: Editor.TokenGroupScopesMap = {
   //   ],
   //   foreground: stc.type,
   // },
-  functions: {
-    scope: ['entity.name.function', 'support.function'],
-    foreground: stc.function,
-  },
-  variables: {
-    scope: ['variable', 'entity.name.variable'],
-    foreground: stc.variable,
-  },
 };
 
-const symbolScope: Editor.Scopes = {
+const symbolScope: Editor.Scope = {
   scope: [
     'punctuation',
     'meta.brace',
@@ -58,7 +58,8 @@ const symbolScope: Editor.Scopes = {
   },
 };
 
-const scopes: Editor.Scopes[] = [];
+const scopes: Editor.Scope[] = [];
+
 const generateTextMateScopes = () => {
   for (const key in tokenGroupScopesMap) {
     if (Object.prototype.hasOwnProperty.call(tokenGroupScopesMap, key)) {

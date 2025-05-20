@@ -1,6 +1,6 @@
 import { color as c, semanticTokenColor as stc } from '../../../color.ts';
 
-export const scopeScss: Editor.Scopes[] = [
+export const scopeScss: Editor.Scope[] = [
   {
     scope: ['entity.name.tag.reference.scss', 'meta.property-list.scss'],
     settings: {

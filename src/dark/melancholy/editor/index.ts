@@ -7,16 +7,11 @@ const semanticTokenColor: Editor.Semantic = {
   ...semantics,
 };
 
-const tokenColor: Editor.Scopes[] = [
+const tokenColor: Editor.Scope[] = [
   ...defaultTokenScopes,
   symbolScope,
   ...scopes,
 ];
-
-for (let i = 0; i < tokenColor.length; i++) {
-  tokenColor[i].settings.foreground =
-    tokenColor[i].settings.foreground?.toLowerCase();
-}
 
 for (const token in semanticTokenColor) {
   const key = token as keyof typeof semanticTokenColor;
@@ -24,6 +19,11 @@ for (const token in semanticTokenColor) {
     semanticTokenColor[key].foreground?.toLowerCase();
 }
 
-export const editorTokenColorCustomizations = tokenColor;
+for (let i = 0; i < tokenColor.length; i++) {
+  tokenColor[i].settings.foreground =
+    tokenColor[i].settings.foreground?.toLowerCase();
+}
 
 export const editorSemanticTokenColorCustomizations = semanticTokenColor;
+
+export const editorTokenColorCustomizations = tokenColor;

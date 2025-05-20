@@ -1,6 +1,14 @@
 import { semanticTokenColor as stc } from '../../../color.ts';
 
-export const scopeJS: Editor.Scopes[] = [
+export const semanticJS: Editor.SemanticTokenMap = {
+  'class:javascript': {
+    foreground: stc.class,
+  },
+};
+
+
+
+export const scopeJS: Editor.Scope[] = [
   {
     scope: [
       'constant.language',

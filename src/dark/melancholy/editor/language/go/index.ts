@@ -1,7 +1,7 @@
 import { semanticTokenColor as stc, color as c } from '../../../color.ts';
-import { colorHTML } from '../html/color.ts';
+import { colorHTML } from '../html/index.ts';
 
-export const scopeGo: Editor.Scopes[] = [
+export const scopeGo: Editor.Scope[] = [
   {
     scope: ['source.go entity.name.type.package.go'],
     settings: {
