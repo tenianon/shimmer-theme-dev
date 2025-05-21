@@ -19,7 +19,7 @@ export const scopeHTML: Editor.Scope[] = [
     },
   },
   {
-    scope: ['entity.other.attribute-name'],
+    scope: ['entity.other.attribute-name', 'invalid.illegal.character-not-allowed-here.html'],
     settings: {
       foreground: c.color8,
     },
