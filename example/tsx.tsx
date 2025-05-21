@@ -3,6 +3,7 @@ import React from 'react';
 
 interface MyButtonProps {
   color: string;
+  isT: boolean
 }
 
 class MyButtonClass {

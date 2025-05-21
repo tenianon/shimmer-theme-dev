@@ -342,6 +342,7 @@
         "storage.type.function.arrow",
         "constant.language.import-export-all",
         "entity.other.attribute-name",
+        "invalid.illegal.character-not-allowed-here.html",
         "punctuation.definition.entity.css",
         "punctuation.definition.entity.begin.bracket.square.css",
         "punctuation.definition.entity.end.bracket.square.css",
