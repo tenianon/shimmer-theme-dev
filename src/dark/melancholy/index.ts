@@ -3,13 +3,13 @@ import {
   editorTokenColorCustomizations,
 } from './editor/index.ts';
 import { workbenchColorCustomizations } from './workbench/index.ts';
-import { hexToLightness } from '../../utils/culori.ts';
+import chroma from 'chroma-js';
 
-const lightnessArray = [0, 5, 10, 15, 20];
+const brightnessArray = [0, 5, 10, 15, 20];
 
 const themeList: Theme[] = [];
 
-lightnessArray.forEach((degree) => {
+brightnessArray.forEach((brightness) => {
   let name = 'shimmer-theme-dark-melancholy';
   const type = 'dark';
   const colors = workbenchColorCustomizations;
@@ -22,25 +22,30 @@ lightnessArray.forEach((degree) => {
   let label = 'Shimmer Theme Dark Melancholy';
   const uiTheme = 'vs-dark';
 
-  const lightness = (degree / 100) as Parameters<typeof hexToLightness>[1];
+  const value = brightness / 100;
 
-  if (degree) {
-    name += '_' + degree;
-    label += ' ' + String(degree).padStart(2, '0');
+
+
+  
+  if (brightness) {
+    name += '_' + brightness;
+    label += ' ' + String(brightness).padStart(2, '0');
 
     for (const token in semanticTokenColors) {
       const key = token as keyof typeof semanticTokenColors;
-      semanticTokenColors[key].foreground = hexToLightness(
+      semanticTokenColors[key].foreground = chroma(
         semanticTokenColors[key].foreground,
-        lightness,
-      );
+      )
+        .brighten(value)
+        .hex();
     }
 
     for (let i = 0; i < tokenColors.length; i++) {
-      tokenColors[i].settings.foreground = hexToLightness(
+      tokenColors[i].settings.foreground = chroma(
         tokenColors[i].settings.foreground,
-        lightness,
-      );
+      )
+        .brighten(value)
+        .hex();
     }
   }
 
