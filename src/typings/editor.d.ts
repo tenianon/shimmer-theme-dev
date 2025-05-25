@@ -1,6 +1,6 @@
 type FontStyle = 'italic' | 'bold' | 'underline' | 'strikethrough';
 
-type SemanticTokenModifiersLegend =
+type BaseSemanticModifier =
   | 'declaration'
   | 'definition'
   | 'readonly'
@@ -12,7 +12,7 @@ type SemanticTokenModifiersLegend =
   | 'documentation'
   | 'defaultLibrary';
 
-type SemanticTokenTypesLegend =
+type BaseSemanticType =
   | 'variable'
   | 'parameter'
   | 'keyword'
@@ -37,7 +37,7 @@ type SemanticTokenTypesLegend =
   | 'regexp'
   | 'struct';
 
-type TokenGroupScopeTypesLegend =
+type BaseScopeType =
   | 'comments'
   | 'strings'
   | 'keywords'
@@ -46,46 +46,50 @@ type TokenGroupScopeTypesLegend =
   | 'functions'
   | 'variables';
 
-type SemanticTokenType =
-  | `${SemanticTokenTypesLegend}`
-  | `${SemanticTokenTypesLegend}.${string}`
-  | `${SemanticTokenTypesLegend}:${string}`
-  | `${SemanticTokenTypesLegend}.${string}:${string}`;
+type SemanticTypeGroup =
+  | `${BaseSemanticType}`
+  | `${BaseSemanticType}.${string}`
+  | `${BaseSemanticType}:${string}`
+  | `${BaseSemanticType}.${string}:${string}`;
 
 declare namespace Editor {
-  export type TokenGroupScopeKey = TokenGroupScopeTypesLegend;
+  export type BaseSemanticKey = SemanticTypeGroup;
 
-  export type SemanticTokenKey = SemanticTokenType;
+  export type BaseScopeKey = BaseScopeType;
 
-  export type SemanticTokenMap = {
-    [key: string]: {
+  export type BaseSemantic = Record<
+    string,
+    {
       foreground: string;
       fontStyle?: FontStyle;
-    };
-  } & Partial<
-    Record<
-      SemanticTokenKey,
-      {
-        foreground: string;
-        fontStyle?: FontStyle;
-      }
-    >
-  >;
+    }
+  > &
+    Partial<
+      Record<
+        BaseSemanticKey,
+        {
+          foreground: string;
+          fontStyle?: FontStyle;
+        }
+      >
+    >;
 
-  export type TokenGroupScopesMap = {
-    [key in TokenGroupScopeKey]?: {
+  export type BaseScope = Record<
+    BaseScopeKey,
+    {
       scope: string | Array<string>;
       foreground: string;
       fontStyle?: FontStyle;
-    };
-  };
+    }
+  >;
 
-  export type Semantic = {
-    [key in SemanticTokenKey]?: {
+  export type Semantic = Record<
+    string,
+    {
       foreground: string;
       fontStyle?: FontStyle;
-    };
-  };
+    }
+  >;
 
   export type Scope = {
     name?: string;

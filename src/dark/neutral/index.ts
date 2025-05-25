@@ -1,63 +1,36 @@
 import {
-  editorSemanticTokenColorCustomizations,
-  editorTokenColorCustomizations,
-} from './editor/index.ts';
-import { workbenchColorCustomizations } from './workbench/index.ts';
-import chroma from 'chroma-js';
+  getWorkbenchConfig,
+  getSemanticsConfig,
+  getScopesConfig,
+  baseSemanticColor,
+} from '../../core/index.ts';
 
-const brightnessArray = [0, -5, 5, 10];
+export const color = {
+  primary: '#755ade',
+  color0: '#0a0b0a',
+  color1: '#070707',
+  color2: '#171717',
+  color3: '#272727',
+  color4: '#373737',
+  color5: '#474747',
+  color6: '#575757',
+  color7: '#676767',
+  color8: '#777777',
+  color9: '#878787',
+  color10: '#979797',
+  color11: '#a7a7a7',
+  color12: '#b7b7b7',
+  color13: '#c7c7c7',
+  color14: '#d7d7d7',
+  color15: '#e7e7e7',
+} as const;
 
-const themeList: Theme[] = [];
-
-brightnessArray.forEach((brightness) => {
-  let name = 'shimmer-theme-dark-neutral';
-  const type = 'dark';
-  const colors = workbenchColorCustomizations;
-  const semanticHighlighting = true;
-
-  const semanticTokenColors = structuredClone(
-    editorSemanticTokenColorCustomizations,
-  );
-  const tokenColors = structuredClone(editorTokenColorCustomizations);
-  let label = 'Shimmer Theme Dark Neutral';
-  const uiTheme = 'vs-dark';
-
-  const value = brightness / 100;
-
-  if (brightness) {
-    name += '_' + brightness;
-    label += ' ' + String(brightness).padStart(2, '0');
-
-    for (const token in semanticTokenColors) {
-      const key = token as keyof typeof semanticTokenColors;
-      semanticTokenColors[key].foreground = chroma(
-        semanticTokenColors[key].foreground,
-      )
-        .brighten(value)
-        .hex();
-    }
-
-    for (let i = 0; i < tokenColors.length; i++) {
-      tokenColors[i].settings.foreground = chroma(
-        tokenColors[i].settings.foreground,
-      )
-        .brighten(value)
-        .hex();
-    }
-  }
-
-  const theme: Theme = {
-    name,
-    type,
-    colors,
-    semanticHighlighting,
-    semanticTokenColors,
-    tokenColors,
-    label,
-    uiTheme,
-  };
-
-  themeList.push(theme);
-});
-
-export const neutral = themeList;
+export const neutral: ThemeConfig = {
+  name: 'neutral',
+  type: 'dark',
+  uiTheme: 'vs-dark',
+  brightness: [-2, 0, 5, 10],
+  colors: getWorkbenchConfig(color),
+  semanticTokenColors: getSemanticsConfig(baseSemanticColor(color)),
+  tokenColors: getScopesConfig(color, baseSemanticColor(color)),
+};

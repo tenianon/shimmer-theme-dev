@@ -1,63 +1,19 @@
 import {
-  editorSemanticTokenColorCustomizations,
-  editorTokenColorCustomizations,
-} from './editor/index.ts';
-import { workbenchColorCustomizations } from './workbench/index.ts';
-import chroma from 'chroma-js';
+  getWorkbenchBlockConfig,
+  getSemanticsConfig,
+  getScopesConfig,
+  baseBlockColor,
+  baseSemanticColor,
+} from '../../core/index.ts';
 
-const brightnessArray = [0, -5, 5, 10];
+import { color } from '../neutral/index.ts';
 
-const themeList: Theme[] = [];
-
-brightnessArray.forEach((brightness) => {
-  let name = 'shimmer-theme-dark-neutral-block';
-  const type = 'dark';
-  const colors = workbenchColorCustomizations;
-  const semanticHighlighting = true;
-
-  const semanticTokenColors = structuredClone(
-    editorSemanticTokenColorCustomizations,
-  );
-  const tokenColors = structuredClone(editorTokenColorCustomizations);
-  let label = 'Shimmer Theme Dark Neutral Block';
-  const uiTheme = 'vs-dark';
-
-  const value = brightness / 100;
-
-  if (brightness) {
-    name += '_' + brightness;
-    label += ' ' + String(brightness).padStart(2, '0');
-
-    for (const token in semanticTokenColors) {
-      const key = token as keyof typeof semanticTokenColors;
-      semanticTokenColors[key].foreground = chroma(
-        semanticTokenColors[key].foreground,
-      )
-        .brighten(value)
-        .hex();
-    }
-
-    for (let i = 0; i < tokenColors.length; i++) {
-      tokenColors[i].settings.foreground = chroma(
-        tokenColors[i].settings.foreground,
-      )
-        .brighten(value)
-        .hex();
-    }
-  }
-
-  const theme: Theme = {
-    name,
-    type,
-    colors,
-    semanticHighlighting,
-    semanticTokenColors,
-    tokenColors,
-    label,
-    uiTheme,
-  };
-
-  themeList.push(theme);
-});
-
-export const neutralBlock = themeList;
+export const neutralBlock: ThemeConfig = {
+  name: 'neutral-block',
+  type: 'dark',
+  uiTheme: 'vs-dark',
+  brightness: [-2, 0, 5, 10],
+  colors: getWorkbenchBlockConfig(baseBlockColor(color)),
+  semanticTokenColors: getSemanticsConfig(baseSemanticColor(color)),
+  tokenColors: getScopesConfig(color, baseSemanticColor(color)),
+};

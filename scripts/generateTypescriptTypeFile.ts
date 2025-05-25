@@ -28,10 +28,10 @@ function matchEditorTokenColorCustomizations(
 
 function generateTypeScriptTypeFile(extractedValues: Array<string>) {
   let interfaceContent =
-    'declare type WorkbenchColorCustomizations = Partial<{\r\n  [key in WorkbenchColorCustomizationsTypesLegend]: string | null\r\n}>\r\n\r\n';
+    'declare type Workbench = Partial<\r\n  Record<WorkbenchKey, string | null>\r\n>\r\n\r\n';
 
   interfaceContent +=
-    'declare type WorkbenchColorCustomizationsTypesLegend = \r\n';
+    'declare type WorkbenchKey = \r\n';
 
   for (const key of extractedValues) {
     interfaceContent += `	'${key}' |\r\n`;

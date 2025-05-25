@@ -1,104 +1,104 @@
 {
-  "name": "shimmer-theme-dark-melancholy_10",
-  "include": "./shimmer-theme-dark-melancholy.json",
+  "name": "shimmer-theme-dark-modern_5",
+  "include": "./shimmer-theme-dark-modern.json",
   "type": "dark",
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "variable": {
-      "foreground": "#dcb0ff"
+      "foreground": "#c298e6"
     },
     "parameter": {
-      "foreground": "#eeca87"
+      "foreground": "#d4b170"
     },
     "keyword": {
-      "foreground": "#f6ace5"
+      "foreground": "#dc94cc"
     },
     "string": {
-      "foreground": "#5cd5bf"
+      "foreground": "#3fbca7"
     },
     "comment": {
-      "foreground": "#989998"
+      "foreground": "#818281"
     },
     "function": {
-      "foreground": "#b0b9ff"
+      "foreground": "#96a1ff"
     },
     "method": {
-      "foreground": "#b0b9ff"
+      "foreground": "#96a1ff"
     },
     "property": {
-      "foreground": "#9ad0fb"
+      "foreground": "#81b7e1"
     },
     "number": {
-      "foreground": "#92d2c3"
+      "foreground": "#7ab9ab"
     },
     "interface": {
-      "foreground": "#f3b2b6"
+      "foreground": "#d99a9d"
     },
     "type": {
-      "foreground": "#f3b2b6"
+      "foreground": "#d99a9d"
     },
     "namespace": {
-      "foreground": "#f7b482"
+      "foreground": "#dc9c6b"
     },
     "typeParameter": {
-      "foreground": "#9cd5a0"
+      "foreground": "#84bb88"
     },
     "enum": {
-      "foreground": "#70d0df"
+      "foreground": "#55b7c6"
     },
     "enumMember": {
-      "foreground": "#70d0df"
+      "foreground": "#55b7c6"
     },
     "macro:c": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     },
     "enum:c": {
-      "foreground": "#9cd5a0"
+      "foreground": "#84bb88"
     },
     "enumMember:c": {
-      "foreground": "#9cd5a0"
+      "foreground": "#84bb88"
     },
     "templateType:cpp": {
-      "foreground": "#ffa2b9"
+      "foreground": "#f489a1"
     },
     "enum:cpp": {
-      "foreground": "#9cd5a0"
+      "foreground": "#84bb88"
     },
     "enumMember:cpp": {
-      "foreground": "#9cd5a0"
+      "foreground": "#84bb88"
     },
     "class:html": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     },
     "class:javascript": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     },
     "class:python": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     },
     "module:python": {
-      "foreground": "#f7b482"
+      "foreground": "#dc9c6b"
     },
     "class.builtin:python": {
-      "foreground": "#61cefc"
+      "foreground": "#42b5e2"
     },
     "class.typeHint.builtin:python": {
-      "foreground": "#f3b2b6"
+      "foreground": "#d99a9d"
     },
     "magicFunction:python": {
-      "foreground": "#ffa2b9"
+      "foreground": "#f489a1"
     },
     "selfParameter:python": {
-      "foreground": "#9cd5a0"
+      "foreground": "#84bb88"
     },
     "class:typescript": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     },
     "class:typescriptreact": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     },
     "class.declaration:vue": {
-      "foreground": "#80c5ff"
+      "foreground": "#63adff"
     }
   },
   "tokenColors": [
@@ -109,7 +109,7 @@
         "variable.other.link.underline.jsdoc"
       ],
       "settings": {
-        "foreground": "#989998"
+        "foreground": "#818281"
       }
     },
     {
@@ -130,7 +130,7 @@
         "meta.property-name.scss"
       ],
       "settings": {
-        "foreground": "#5cd5bf"
+        "foreground": "#3fbca7"
       }
     },
     {
@@ -165,7 +165,7 @@
         "keyword.other.default.scss"
       ],
       "settings": {
-        "foreground": "#f6ace5"
+        "foreground": "#dc94cc"
       }
     },
     {
@@ -180,7 +180,7 @@
         "support.constant.vendored.property-value.scss"
       ],
       "settings": {
-        "foreground": "#92d2c3"
+        "foreground": "#7ab9ab"
       }
     },
     {
@@ -191,7 +191,7 @@
         "source.python meta.function-call.generic.python"
       ],
       "settings": {
-        "foreground": "#b0b9ff"
+        "foreground": "#96a1ff"
       }
     },
     {
@@ -210,7 +210,7 @@
         "source.css.scss entity.other.attribute-name.parent-selector-suffix.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#dcb0ff"
+        "foreground": "#c298e6"
       }
     },
     {
@@ -238,7 +238,7 @@
         "meta.property-list.scss"
       ],
       "settings": {
-        "foreground": "#babbba"
+        "foreground": "#a2a3a2"
       }
     },
     {
@@ -256,7 +256,7 @@
         "source.css.scss"
       ],
       "settings": {
-        "foreground": "#cbcccb"
+        "foreground": "#b2b3b2"
       }
     },
     {
@@ -273,7 +273,7 @@
         "meta.at-rule.extend.scss"
       ],
       "settings": {
-        "foreground": "#f7b482"
+        "foreground": "#dc9c6b"
       }
     },
     {
@@ -287,7 +287,7 @@
         "source.python constant.character.escape.python"
       ],
       "settings": {
-        "foreground": "#b1d46f"
+        "foreground": "#98bb58"
       }
     },
     {
@@ -301,7 +301,7 @@
         "text.html.markdown markup.underline.link.image.markdown"
       ],
       "settings": {
-        "foreground": "#70d0df"
+        "foreground": "#55b7c6"
       }
     },
     {
@@ -322,7 +322,7 @@
         "meta.definition.variable.scss"
       ],
       "settings": {
-        "foreground": "#9ad0fb"
+        "foreground": "#81b7e1"
       }
     },
     {
@@ -335,7 +335,7 @@
         "support.constant.color.w3c-special-color-keyword.less"
       ],
       "settings": {
-        "foreground": "#eeca87"
+        "foreground": "#d4b170"
       }
     },
     {
@@ -365,7 +365,7 @@
         "entity.name.type.module.tsx"
       ],
       "settings": {
-        "foreground": "#f3b2b6"
+        "foreground": "#d99a9d"
       }
     },
     {
@@ -381,7 +381,7 @@
         "entity.other.inherited-class.tsx"
       ],
       "settings": {
-        "foreground": "#80c5ff"
+        "foreground": "#63adff"
       }
     },
     {
@@ -399,7 +399,7 @@
         "variable.scss"
       ],
       "settings": {
-        "foreground": "#9cd5a0"
+        "foreground": "#84bb88"
       }
     },
     {
@@ -409,7 +409,7 @@
         "entity.name.tag"
       ],
       "settings": {
-        "foreground": "#ffa2b9"
+        "foreground": "#f489a1"
       }
     },
     {
@@ -417,7 +417,7 @@
         "support.class.component"
       ],
       "settings": {
-        "foreground": "#62cffd"
+        "foreground": "#42b6e3"
       }
     },
     {
@@ -426,7 +426,7 @@
         "text.html.markdown entity.name.section.markdown"
       ],
       "settings": {
-        "foreground": "#b0b9ff",
+        "foreground": "#96a1ff",
         "fontStyle": "bold"
       }
     },
@@ -436,7 +436,7 @@
         "text.html.markdown markup.bold.markdown"
       ],
       "settings": {
-        "foreground": "#eeca87",
+        "foreground": "#d4b170",
         "fontStyle": "bold"
       }
     },
@@ -446,7 +446,7 @@
         "text.html.markdown markup.italic.markdown"
       ],
       "settings": {
-        "foreground": "#f3b2b6",
+        "foreground": "#d99a9d",
         "fontStyle": "italic"
       }
     },
@@ -456,7 +456,7 @@
         "text.html.markdown markup.strikethrough.markdown"
       ],
       "settings": {
-        "foreground": "#a9aaa9",
+        "foreground": "#919291",
         "fontStyle": "strikethrough"
       }
     },
@@ -468,10 +468,10 @@
         "source.vue meta.tag.custom entity.name.tag"
       ],
       "settings": {
-        "foreground": "#8bddb1"
+        "foreground": "#72c498"
       }
     }
   ],
-  "label": "Shimmer Theme Dark Melancholy 10",
+  "label": "Shimmer Theme Dark Modern 05",
   "uiTheme": "vs-dark"
 }

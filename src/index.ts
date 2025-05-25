@@ -22,38 +22,26 @@ async function deleteAllFiles(directoryPath = 'themes') {
 }
 
 async function writeThemeFile() {
-  const filePromises = themeList.map(
-    async ({
-      name,
-      type,
-      colors,
-      semanticHighlighting,
-      semanticTokenColors,
-      tokenColors,
-    }) => {
-      try {
-        await writeFile(
-          `./themes/${name}.json`,
-          JSON.stringify(
-            {
-              name,
-              type,
-              colors,
-              semanticHighlighting,
-              semanticTokenColors,
-              tokenColors,
-            },
-            null,
-            2,
-          ),
-          'utf-8',
-        );
-        console.log(`Create file => './themes/${name}.json' successfully`);
-      } catch (e) {
-        console.error(`Error creating file => './themes/${name}.json':`, e);
-      }
-    },
-  );
+  const filePromises = themeList.map(async (config) => {
+    try {
+      const filterConfig = Object.fromEntries(
+        Object.entries(config).filter(([_, value]) => value !== null),
+      );
+
+      await writeFile(
+        `./themes/${config.name}.json`,
+        JSON.stringify(
+          filterConfig,
+          null,
+          2,
+        ),
+        'utf-8',
+      );
+      console.log(`Create file => './themes/${config.name}.json' successfully`);
+    } catch (e) {
+      console.error(`Error creating file => './themes/${config.name}.json':`, e);
+    }
+  });
 
   await Promise.allSettled(filePromises);
 }

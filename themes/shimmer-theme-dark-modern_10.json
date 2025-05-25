@@ -1,6 +1,6 @@
 {
-  "name": "shimmer-theme-dark-melancholy_10",
-  "include": "./shimmer-theme-dark-melancholy.json",
+  "name": "shimmer-theme-dark-modern_10",
+  "include": "./shimmer-theme-dark-modern.json",
   "type": "dark",
   "semanticHighlighting": true,
   "semanticTokenColors": {
@@ -472,6 +472,6 @@
       }
     }
   ],
-  "label": "Shimmer Theme Dark Melancholy 10",
+  "label": "Shimmer Theme Dark Modern 10",
   "uiTheme": "vs-dark"
 }
