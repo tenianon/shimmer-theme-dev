@@ -11,7 +11,9 @@ export default [
 
   {
     rules: {
-      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-explicit-any": "warn",
+      "no-console": "error",
+      "sort-keys": ["error", "asc"],
     },
   },
 ];

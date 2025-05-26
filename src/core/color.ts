@@ -32,8 +32,9 @@ export const baseBlockColor = (color = baseColor): Color => {
   };
 };
 
-export const baseSemanticColor = (color = baseColor): Record<string, string> &
-  Partial<Record<Editor.BaseSemanticKey, string>> => {
+export const baseSemanticColor = (
+  color = baseColor,
+): Record<string, string> & Partial<Record<Editor.BaseSemanticKey, string>> => {
   return {
     variable: '#a980cd',
     parameter: '#ba9959',

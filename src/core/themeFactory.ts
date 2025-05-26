@@ -28,10 +28,9 @@ export function themeFactory(config: ThemeConfig): Theme[] {
     const tokenColors = structuredClone(mergedScope(config.tokenColors));
 
     if (level) {
+      colors = null;
 
-      colors = null
-
-      include = `./${name}.json`
+      include = `./${name}.json`;
 
       const ratio = level / 10;
 

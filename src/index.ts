@@ -30,16 +30,15 @@ async function writeThemeFile() {
 
       await writeFile(
         `./themes/${config.name}.json`,
-        JSON.stringify(
-          filterConfig,
-          null,
-          2,
-        ),
+        JSON.stringify(filterConfig, null, 2),
         'utf-8',
       );
       console.log(`Create file => './themes/${config.name}.json' successfully`);
     } catch (e) {
-      console.error(`Error creating file => './themes/${config.name}.json':`, e);
+      console.error(
+        `Error creating file => './themes/${config.name}.json':`,
+        e,
+      );
     }
   });
 

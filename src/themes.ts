@@ -10,7 +10,7 @@ const themeConfigList: ThemeConfig[] = [
   melancholyBlock,
   neutral,
   neutralBlock,
-  modern
+  modern,
 ];
 
 export const themes: Theme[] = [];

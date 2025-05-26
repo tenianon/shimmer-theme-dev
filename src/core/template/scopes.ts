@@ -31,7 +31,7 @@ export const getScopesConfig = (
     },
     {
       name: 'strings',
-    scope: ['string', 'meta.embedded.assembly'],
+      scope: ['string', 'meta.embedded.assembly'],
       settings: {
         foreground: semantic.string,
       },
@@ -888,6 +888,6 @@ export const getScopesConfig = (
     ...scss,
     ...ts,
     ...tsx,
-    ...vue
+    ...vue,
   ];
 };

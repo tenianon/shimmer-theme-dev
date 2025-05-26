@@ -13,5 +13,5 @@ declare interface Theme {
 }
 
 declare interface ThemeConfig extends Theme {
-  brightness?: number[]
+  brightness?: number[];
 }
