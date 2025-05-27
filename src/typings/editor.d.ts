@@ -58,21 +58,21 @@ declare namespace Editor {
   export type BaseScopeKey = BaseScopeType;
 
   export type BaseSemantic = Partial<
-      Record<
-        BaseSemanticKey,
-        {
-          fontStyle?: FontStyle;
-          foreground: string;
-        }
-      >
-    > &
     Record<
-    string,
-    {
-      fontStyle?: FontStyle;
-      foreground: string;
-    }
-  >;
+      BaseSemanticKey,
+      {
+        fontStyle?: FontStyle;
+        foreground: string;
+      }
+    >
+  > &
+    Record<
+      string,
+      {
+        fontStyle?: FontStyle;
+        foreground: string;
+      }
+    >;
 
   export type BaseScope = Record<
     BaseScopeKey,

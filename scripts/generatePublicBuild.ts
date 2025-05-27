@@ -20,9 +20,7 @@ const outFileList = await globby([
   'shimmer-theme*.png',
 ]);
 
-const pngList = await globby([
-  'shimmer-theme*.png',
-]);
+const pngList = await globby(['shimmer-theme*.png']);
 
 function changePublicPackage() {
   const packagePath = path.join(outDir, 'package.json');
