@@ -1,6 +1,7 @@
 import { baseColor, baseSemanticColor, baseLanguageColor } from '../color.ts';
 
 export const getSemanticsConfig = (
+  color = baseColor,
   semanticColor = baseSemanticColor(baseColor),
   languageColor = baseLanguageColor,
 ): Editor.Semantic => {
@@ -8,6 +9,48 @@ export const getSemanticsConfig = (
   const language = languageColor;
 
   const defaultSemantic: Editor.BaseSemantic = {
+    comment: {
+      foreground: semantic.comment,
+    },
+    enum: {
+      foreground: semantic.enum,
+    },
+    enumMember: {
+      foreground: semantic.enumMember,
+    },
+    function: {
+      foreground: semantic.function,
+    },
+    interface: {
+      foreground: semantic.interface,
+    },
+    keyword: {
+      foreground: semantic.keyword,
+    },
+    method: {
+      foreground: semantic.method,
+    },
+    namespace: {
+      foreground: semantic.namespace,
+    },
+    number: {
+      foreground: semantic.number,
+    },
+    parameter: {
+      foreground: semantic.parameter,
+    },
+    property: {
+      foreground: semantic.property,
+    },
+    string: {
+      foreground: semantic.string,
+    },
+    type: {
+      foreground: semantic.type,
+    },
+    typeParameter: {
+      foreground: semantic.typeParameter,
+    },
     // class: {
     //   foreground: stc.class,
     // }
@@ -35,71 +78,29 @@ export const getSemanticsConfig = (
     variable: {
       foreground: semantic.variable,
     },
-    parameter: {
-      foreground: semantic.parameter,
-    },
-    keyword: {
-      foreground: semantic.keyword,
-    },
-    string: {
-      foreground: semantic.string,
-    },
-    comment: {
-      foreground: semantic.comment,
-    },
-    function: {
-      foreground: semantic.function,
-    },
-    method: {
-      foreground: semantic.method,
-    },
-    property: {
-      foreground: semantic.property,
-    },
-    number: {
-      foreground: semantic.number,
-    },
-    interface: {
-      foreground: semantic.interface,
-    },
-    type: {
-      foreground: semantic.type,
-    },
-    namespace: {
-      foreground: semantic.namespace,
-    },
-    typeParameter: {
-      foreground: semantic.typeParameter,
-    },
-    enum: {
-      foreground: semantic.enum,
-    },
-    enumMember: {
-      foreground: semantic.enumMember,
-    },
   };
 
   const c: Editor.Semantic = {
-    'macro:c': {
-      foreground: semantic.class,
-    },
     'enum:c': {
       foreground: semantic.typeParameter,
     },
     'enumMember:c': {
       foreground: semantic.typeParameter,
     },
+    'macro:c': {
+      foreground: semantic.class,
+    },
   };
 
   const cpp: Editor.Semantic = {
-    'templateType:cpp': {
-      foreground: language.html.tag,
-    },
     'enum:cpp': {
       foreground: semantic.typeParameter,
     },
     'enumMember:cpp': {
       foreground: semantic.typeParameter,
+    },
+    'templateType:cpp': {
+      foreground: language.html.tag,
     },
   };
 
@@ -116,20 +117,20 @@ export const getSemanticsConfig = (
   };
 
   const py: Editor.Semantic = {
-    'class:python': {
-      foreground: semantic.class,
-    },
-    'module:python': {
-      foreground: semantic.namespace,
-    },
     'class.builtin:python': {
       foreground: language.py.classBuiltin,
     },
     'class.typeHint.builtin:python': {
       foreground: semantic.type,
     },
+    'class:python': {
+      foreground: semantic.class,
+    },
     'magicFunction:python': {
       foreground: language.html.tag,
+    },
+    'module:python': {
+      foreground: semantic.namespace,
     },
     'selfParameter:python': {
       foreground: semantic.typeParameter,
@@ -154,6 +155,24 @@ export const getSemanticsConfig = (
     },
   };
 
+  const rs: Editor.Semantic = {
+    'attributeBracket.attribute:rust': {
+      foreground: baseColor.color8,
+    },
+    'generic.attribute:rust': {
+      foreground: semantic.parameter,
+    },
+    'lifetime:rust': {
+      foreground: language.html.tag,
+    },
+    'struct:rust': {
+      foreground: semantic.class,
+    },
+    // 'struct:rust': {
+    //   foreground: semantic.color8
+    // }
+  };
+
   return {
     ...defaultSemantic,
     ...c,
@@ -164,5 +183,6 @@ export const getSemanticsConfig = (
     ...ts,
     ...tsx,
     ...vue,
+    ...rs,
   };
 };

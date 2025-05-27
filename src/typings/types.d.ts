@@ -1,14 +1,14 @@
-declare type UiTheme = 'vs' | 'vs-dark' | 'hc-black' | 'hc-light';
+declare type UiTheme = 'hc-black' | 'hc-light' | 'vs-dark' | 'vs';
 
 declare interface Theme {
-  name: string;
-  include?: string;
-  type: 'light' | 'dark';
   colors?: Workbench;
+  include?: string;
+  label?: string;
+  name: string;
   semanticHighlighting?: boolean;
   semanticTokenColors?: Editor.Semantic;
   tokenColors?: Editor.Scope[];
-  label?: string;
+  type: 'dark' | 'light';
   uiTheme: UiTheme;
 }
 

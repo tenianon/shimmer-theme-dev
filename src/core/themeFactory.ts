@@ -1,6 +1,6 @@
-import { mergedScope } from '../utils/merged.ts';
-
 import chroma from 'chroma-js';
+
+import { mergedScope } from '../utils/merged.ts';
 
 export function themeFactory(config: ThemeConfig): Theme[] {
   const themeList: Theme[] = [];
@@ -57,14 +57,14 @@ export function themeFactory(config: ThemeConfig): Theme[] {
     }
 
     const theme: Theme = structuredClone({
-      name,
-      include,
-      type,
       colors,
+      include,
+      label,
+      name,
       semanticHighlighting,
       semanticTokenColors,
       tokenColors,
-      label,
+      type,
       uiTheme,
     });
 

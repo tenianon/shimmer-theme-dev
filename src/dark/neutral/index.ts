@@ -6,7 +6,6 @@ import {
 } from '../../core/index.ts';
 
 export const color = {
-  primary: '#755ade',
   color0: '#0a0b0a',
   color1: '#070707',
   color2: '#171717',
@@ -23,14 +22,15 @@ export const color = {
   color13: '#c7c7c7',
   color14: '#d7d7d7',
   color15: '#e7e7e7',
+  primary: '#755ade',
 } as const;
 
 export const neutral: ThemeConfig = {
-  name: 'neutral',
-  type: 'dark',
-  uiTheme: 'vs-dark',
   brightness: [-2, 0, 5, 10],
   colors: getWorkbenchConfig(color),
-  semanticTokenColors: getSemanticsConfig(baseSemanticColor(color)),
+  name: 'neutral',
+  semanticTokenColors: getSemanticsConfig(color, baseSemanticColor(color)),
   tokenColors: getScopesConfig(color, baseSemanticColor(color)),
+  type: 'dark',
+  uiTheme: 'vs-dark',
 };

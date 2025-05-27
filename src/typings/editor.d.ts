@@ -1,93 +1,93 @@
-type FontStyle = 'italic' | 'bold' | 'underline' | 'strikethrough';
+type FontStyle = 'bold' | 'italic' | 'strikethrough' | 'underline';
 
 type BaseSemanticModifier =
-  | 'declaration'
-  | 'definition'
-  | 'readonly'
-  | 'static'
-  | 'deprecated'
   | 'abstract'
   | 'async'
-  | 'modification'
+  | 'declaration'
+  | 'defaultLibrary'
+  | 'definition'
+  | 'deprecated'
   | 'documentation'
-  | 'defaultLibrary';
+  | 'modification'
+  | 'readonly'
+  | 'static';
 
 type BaseSemanticType =
-  | 'variable'
-  | 'parameter'
-  | 'keyword'
-  | 'string'
-  | 'number'
-  | 'comment'
-  | 'function'
-  | 'method'
-  | 'property'
   | 'class'
-  | 'namespace'
-  | 'interface'
-  | 'type'
-  | 'typeParameter'
+  | 'comment'
+  | 'decorator'
   | 'enum'
   | 'enumMember'
-  | 'decorator'
   | 'event'
+  | 'function'
+  | 'interface'
+  | 'keyword'
   | 'label'
   | 'macro'
+  | 'method'
+  | 'namespace'
+  | 'number'
   | 'operator'
+  | 'parameter'
+  | 'property'
   | 'regexp'
-  | 'struct';
+  | 'string'
+  | 'struct'
+  | 'type'
+  | 'typeParameter'
+  | 'variable';
 
 type BaseScopeType =
   | 'comments'
-  | 'strings'
+  | 'functions'
   | 'keywords'
   | 'numbers'
+  | 'strings'
   | 'types'
-  | 'functions'
   | 'variables';
 
 type SemanticTypeGroup =
-  | `${BaseSemanticType}`
-  | `${BaseSemanticType}.${string}`
   | `${BaseSemanticType}:${string}`
-  | `${BaseSemanticType}.${string}:${string}`;
+  | `${BaseSemanticType}.${string}:${string}`
+  | `${BaseSemanticType}.${string}`
+  | `${BaseSemanticType}`;
 
 declare namespace Editor {
   export type BaseSemanticKey = SemanticTypeGroup;
 
   export type BaseScopeKey = BaseScopeType;
 
-  export type BaseSemantic = Record<
-    string,
-    {
-      foreground: string;
-      fontStyle?: FontStyle;
-    }
-  > &
-    Partial<
+  export type BaseSemantic = Partial<
       Record<
         BaseSemanticKey,
         {
-          foreground: string;
           fontStyle?: FontStyle;
+          foreground: string;
         }
       >
-    >;
+    > &
+    Record<
+    string,
+    {
+      fontStyle?: FontStyle;
+      foreground: string;
+    }
+  >;
 
   export type BaseScope = Record<
     BaseScopeKey,
     {
-      scope: string | Array<string>;
-      foreground: string;
       fontStyle?: FontStyle;
+      foreground: string;
+      scope: string | Array<string>;
     }
   >;
 
   export type Semantic = Record<
     string,
     {
-      foreground: string;
       fontStyle?: FontStyle;
+      foreground: string;
     }
   >;
 
@@ -95,8 +95,8 @@ declare namespace Editor {
     name?: string;
     scope: string | Array<string>;
     settings: {
-      foreground?: string;
       fontStyle?: FontStyle;
+      foreground?: string;
     };
   };
 }

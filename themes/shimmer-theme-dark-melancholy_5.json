@@ -1,47 +1,11 @@
 {
-  "name": "shimmer-theme-dark-melancholy_5",
   "include": "./shimmer-theme-dark-melancholy.json",
-  "type": "dark",
+  "label": "Shimmer Theme Dark Melancholy 05",
+  "name": "shimmer-theme-dark-melancholy_5",
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "variable": {
-      "foreground": "#c298e6"
-    },
-    "parameter": {
-      "foreground": "#d4b170"
-    },
-    "keyword": {
-      "foreground": "#dc94cc"
-    },
-    "string": {
-      "foreground": "#3fbca7"
-    },
     "comment": {
       "foreground": "#818281"
-    },
-    "function": {
-      "foreground": "#96a1ff"
-    },
-    "method": {
-      "foreground": "#96a1ff"
-    },
-    "property": {
-      "foreground": "#81b7e1"
-    },
-    "number": {
-      "foreground": "#7ab9ab"
-    },
-    "interface": {
-      "foreground": "#d99a9d"
-    },
-    "type": {
-      "foreground": "#d99a9d"
-    },
-    "namespace": {
-      "foreground": "#dc9c6b"
-    },
-    "typeParameter": {
-      "foreground": "#84bb88"
     },
     "enum": {
       "foreground": "#55b7c6"
@@ -49,8 +13,41 @@
     "enumMember": {
       "foreground": "#55b7c6"
     },
-    "macro:c": {
-      "foreground": "#63adff"
+    "function": {
+      "foreground": "#96a1ff"
+    },
+    "interface": {
+      "foreground": "#d99a9d"
+    },
+    "keyword": {
+      "foreground": "#dc94cc"
+    },
+    "method": {
+      "foreground": "#96a1ff"
+    },
+    "namespace": {
+      "foreground": "#dc9c6b"
+    },
+    "number": {
+      "foreground": "#7ab9ab"
+    },
+    "parameter": {
+      "foreground": "#d4b170"
+    },
+    "property": {
+      "foreground": "#81b7e1"
+    },
+    "string": {
+      "foreground": "#3fbca7"
+    },
+    "type": {
+      "foreground": "#d99a9d"
+    },
+    "typeParameter": {
+      "foreground": "#84bb88"
+    },
+    "variable": {
+      "foreground": "#c298e6"
     },
     "enum:c": {
       "foreground": "#84bb88"
@@ -58,8 +55,8 @@
     "enumMember:c": {
       "foreground": "#84bb88"
     },
-    "templateType:cpp": {
-      "foreground": "#f489a1"
+    "macro:c": {
+      "foreground": "#63adff"
     },
     "enum:cpp": {
       "foreground": "#84bb88"
@@ -67,17 +64,14 @@
     "enumMember:cpp": {
       "foreground": "#84bb88"
     },
+    "templateType:cpp": {
+      "foreground": "#f489a1"
+    },
     "class:html": {
       "foreground": "#63adff"
     },
     "class:javascript": {
       "foreground": "#63adff"
-    },
-    "class:python": {
-      "foreground": "#63adff"
-    },
-    "module:python": {
-      "foreground": "#dc9c6b"
     },
     "class.builtin:python": {
       "foreground": "#42b5e2"
@@ -85,8 +79,14 @@
     "class.typeHint.builtin:python": {
       "foreground": "#d99a9d"
     },
+    "class:python": {
+      "foreground": "#63adff"
+    },
     "magicFunction:python": {
       "foreground": "#f489a1"
+    },
+    "module:python": {
+      "foreground": "#dc9c6b"
     },
     "selfParameter:python": {
       "foreground": "#84bb88"
@@ -98,6 +98,18 @@
       "foreground": "#63adff"
     },
     "class.declaration:vue": {
+      "foreground": "#63adff"
+    },
+    "attributeBracket.attribute:rust": {
+      "foreground": "#a2a3a2"
+    },
+    "generic.attribute:rust": {
+      "foreground": "#d4b170"
+    },
+    "lifetime:rust": {
+      "foreground": "#f489a1"
+    },
+    "struct:rust": {
       "foreground": "#63adff"
     }
   },
@@ -127,7 +139,8 @@
         "meta.at-rule.each.scss",
         "meta.at-rule.each.scss keyword.operator.css",
         "meta.at-rule.each.scss support.constant.mathematical-symbols.scss",
-        "meta.property-name.scss"
+        "meta.property-name.scss",
+        "source.rust entity.name.type.primitive.rust"
       ],
       "settings": {
         "foreground": "#3fbca7"
@@ -177,7 +190,8 @@
         "text.html.markdown punctuation.definition.list.begin.markdown",
         "text.html.markdown constant.other.reference.link.markdown",
         "meta.at-rule.keyframes.scss entity.other.attribute-name.scss",
-        "support.constant.vendored.property-value.scss"
+        "support.constant.vendored.property-value.scss",
+        "source.rust entity.name.type.numeric.rust"
       ],
       "settings": {
         "foreground": "#7ab9ab"
@@ -253,7 +267,8 @@
         "text.html.markdown",
         "meta.paragraph.markdown",
         "source.python",
-        "source.css.scss"
+        "source.css.scss",
+        "source.rust"
       ],
       "settings": {
         "foreground": "#b2b3b2"
@@ -270,7 +285,8 @@
         "text.html.markdown punctuation.definition.markdown",
         "text.html.markdown fenced_code.block.language.markdown",
         "text.html.markdown fenced_code.block.language",
-        "meta.at-rule.extend.scss"
+        "meta.at-rule.extend.scss",
+        "source.rust entity.name.namespace.rust"
       ],
       "settings": {
         "foreground": "#dc9c6b"
@@ -319,7 +335,8 @@
         "text.html.markdown markup.quote.markdown meta.paragraph.markdown",
         "source.python meta.attribute.python",
         "meta.at-rule.media.scss",
-        "meta.definition.variable.scss"
+        "meta.definition.variable.scss",
+        "source.rust meta.function.call.rust"
       ],
       "settings": {
         "foreground": "#81b7e1"
@@ -352,8 +369,8 @@
         "support.type.ts",
         "meta.type.annotation.ts",
         "meta.type.parameters.ts",
-        "meta.type.function.return.ts",
         "meta.return.type.ts",
+        "meta.type.function.return.ts",
         "entity.name.type.ts",
         "entity.name.type.alias.ts",
         "entity.name.type.module.ts",
@@ -362,7 +379,8 @@
         "meta.type.parameters.tsx",
         "entity.name.type.tsx",
         "entity.other.inherited-class.tsx",
-        "entity.name.type.module.tsx"
+        "entity.name.type.module.tsx",
+        "source.rust entity.name.type.rust"
       ],
       "settings": {
         "foreground": "#d99a9d"
@@ -375,10 +393,11 @@
         "text.html.markdown meta.embedded.math.markdown",
         "source.python support.type.metaclass.python",
         "support.class.ts",
-        "entity.name.type.class.ts",
         "entity.other.inherited-class.ts",
+        "entity.name.type.class.ts",
         "entity.name.type.class.tsx",
-        "entity.other.inherited-class.tsx"
+        "entity.other.inherited-class.tsx",
+        "source.rust constant.other.caps.rust"
       ],
       "settings": {
         "foreground": "#63adff"
@@ -406,7 +425,8 @@
       "scope": [
         "source.go entity.name.type.package.go",
         "text.html.derivative meta.tag",
-        "entity.name.tag"
+        "entity.name.tag",
+        "source.rust entity.name.type.lifetime.rust"
       ],
       "settings": {
         "foreground": "#f489a1"
@@ -426,8 +446,8 @@
         "text.html.markdown entity.name.section.markdown"
       ],
       "settings": {
-        "foreground": "#96a1ff",
-        "fontStyle": "bold"
+        "fontStyle": "bold",
+        "foreground": "#96a1ff"
       }
     },
     {
@@ -436,8 +456,8 @@
         "text.html.markdown markup.bold.markdown"
       ],
       "settings": {
-        "foreground": "#d4b170",
-        "fontStyle": "bold"
+        "fontStyle": "bold",
+        "foreground": "#d4b170"
       }
     },
     {
@@ -446,8 +466,8 @@
         "text.html.markdown markup.italic.markdown"
       ],
       "settings": {
-        "foreground": "#d99a9d",
-        "fontStyle": "italic"
+        "fontStyle": "italic",
+        "foreground": "#d99a9d"
       }
     },
     {
@@ -456,8 +476,8 @@
         "text.html.markdown markup.strikethrough.markdown"
       ],
       "settings": {
-        "foreground": "#919291",
-        "fontStyle": "strikethrough"
+        "fontStyle": "strikethrough",
+        "foreground": "#919291"
       }
     },
     {
@@ -472,6 +492,6 @@
       }
     }
   ],
-  "label": "Shimmer Theme Dark Melancholy 05",
+  "type": "dark",
   "uiTheme": "vs-dark"
 }

@@ -1,7 +1,6 @@
 import chroma from 'chroma-js';
 
 export const baseColor: Color = {
-  primary: '#8565ff',
   color0: '#0a0b0a',
   color1: '#1a1b1a',
   color2: '#2a2b2a',
@@ -18,62 +17,63 @@ export const baseColor: Color = {
   color13: '#dadbda',
   color14: '#eaebea',
   color15: '#fafbfa',
+  primary: '#8565ff',
 };
 
 export const baseBlockColor = (color = baseColor): Color => {
   return {
     ...color,
     'color2.25': chroma.mix(color.color2, color.color3, 0.25, 'rgb').hex(),
-    'color2.5': chroma.mix(color.color2, color.color3, 0.5, 'rgb').hex(),
+    'color2.50': chroma.mix(color.color2, color.color3, 0.5, 'rgb').hex(),
     'color2.75': chroma.mix(color.color2, color.color3, 0.75, 'rgb').hex(),
     'color3.25': chroma.mix(color.color3, color.color4, 0.25, 'rgb').hex(),
-    'color3.5': chroma.mix(color.color3, color.color4, 0.5, 'rgb').hex(),
-    'color4.5': chroma.mix(color.color4, color.color5, 0.5, 'rgb').hex(),
+    'color3.50': chroma.mix(color.color3, color.color4, 0.5, 'rgb').hex(),
+    'color4.50': chroma.mix(color.color4, color.color5, 0.5, 'rgb').hex(),
   };
 };
 
 export const baseSemanticColor = (
   color = baseColor,
-): Record<string, string> & Partial<Record<Editor.BaseSemanticKey, string>> => {
+): Partial<Record<Editor.BaseSemanticKey, string>> & Record<string, string> => {
   return {
-    variable: '#a980cd',
-    parameter: '#ba9959',
-    keyword: '#c27cb3',
-    string: '#1aa38f',
-    comment: color.color6,
-    function: '#7c89f0',
-    method: '#7c89f0',
-    property: '#689fc8',
-    number: '#62a193',
     class: '#4495eb',
-    interface: '#bf8286',
-    type: '#bf8286',
-    namespace: '#c28455',
-    typeParameter: '#6ca371',
+    comment: color.color6,
+    decorator: '#ff0000',
     enum: '#389fad',
     enumMember: '#389fad',
-    decorator: '#ff0000',
     event: '#ff0000',
+    function: '#7c89f0',
+    interface: '#bf8286',
+    keyword: '#c27cb3',
     label: '#ff0000',
     macro: '#ff0000',
+    method: '#7c89f0',
+    namespace: '#c28455',
+    number: '#62a193',
     operator: '#ff0000',
+    parameter: '#ba9959',
+    property: '#689fc8',
     regexp: '#ff0000',
+    string: '#1aa38f',
     struct: '#ff0000',
+    type: '#bf8286',
+    typeParameter: '#6ca371',
+    variable: '#a980cd',
   };
 };
 
 export const baseLanguageColor = {
   html: {
-    tag: '#d97189',
     character: '#80a341',
+    tag: '#d97189',
   },
   jsx: {
     component: '#149eca',
   },
-  vue: {
-    component: '#5aab81',
-  },
   py: {
     classBuiltin: '#149dc9',
+  },
+  vue: {
+    component: '#5aab81',
   },
 } as const;

@@ -523,8 +523,8 @@ export const getScopesConfig = (
         'text.html.markdown entity.name.section.markdown',
       ],
       settings: {
-        foreground: semantic.function,
         fontStyle: 'bold',
+        foreground: semantic.function,
       },
     },
     {
@@ -533,8 +533,8 @@ export const getScopesConfig = (
         'text.html.markdown markup.bold.markdown',
       ],
       settings: {
-        foreground: semantic.parameter,
         fontStyle: 'bold',
+        foreground: semantic.parameter,
       },
     },
     {
@@ -543,8 +543,8 @@ export const getScopesConfig = (
         'text.html.markdown markup.italic.markdown',
       ],
       settings: {
-        foreground: semantic.type,
         fontStyle: 'italic',
+        foreground: semantic.type,
       },
     },
     {
@@ -553,8 +553,8 @@ export const getScopesConfig = (
         'text.html.markdown markup.strikethrough.markdown',
       ],
       settings: {
-        foreground: base.color7,
         fontStyle: 'strikethrough',
+        foreground: base.color7,
       },
     },
     {
@@ -814,8 +814,8 @@ export const getScopesConfig = (
         'support.type.ts',
         'meta.type.annotation.ts',
         'meta.type.parameters.ts',
-        'meta.type.function.return.ts',
         'meta.return.type.ts',
+        'meta.type.function.return.ts',
         'entity.name.type.ts',
         'entity.name.type.alias.ts',
         'entity.name.type.module.ts',
@@ -827,8 +827,8 @@ export const getScopesConfig = (
     {
       scope: [
         'support.class.ts',
-        'entity.name.type.class.ts',
         'entity.other.inherited-class.ts',
+        'entity.name.type.class.ts',
       ],
       settings: {
         foreground: semantic.class,
@@ -870,6 +870,57 @@ export const getScopesConfig = (
     },
   ];
 
+  const rust: Editor.Scope[] = [
+    {
+      scope: ['source.rust'],
+      settings: {
+        foreground: color.color9,
+      },
+    },
+    {
+      scope: ['source.rust entity.name.type.rust'],
+      settings: {
+        foreground: semantic.type,
+      },
+    },
+    {
+      scope: ['source.rust entity.name.type.lifetime.rust'],
+      settings: {
+        foreground: language.html.tag,
+      },
+    },
+    {
+      scope: ['source.rust entity.name.namespace.rust'],
+      settings: {
+        foreground: semantic.namespace,
+      },
+    },
+    {
+      scope: ['source.rust meta.function.call.rust'],
+      settings: {
+        foreground: semantic.property,
+      },
+    },
+    {
+      scope: ['source.rust entity.name.type.numeric.rust'],
+      settings: {
+        foreground: semantic.number,
+      },
+    },
+    {
+      scope: ['source.rust entity.name.type.primitive.rust'],
+      settings: {
+        foreground: semantic.string,
+      },
+    },
+    {
+      scope: ['source.rust constant.other.caps.rust'],
+      settings: {
+        foreground: semantic.class,
+      },
+    },
+  ];
+
   return [
     ...group,
     ...unicode,
@@ -889,5 +940,6 @@ export const getScopesConfig = (
     ...ts,
     ...tsx,
     ...vue,
+    ...rust,
   ];
 };

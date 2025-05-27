@@ -1,5 +1,6 @@
 import { readFile, writeFile, readdir, unlink } from 'fs/promises';
 import { join, resolve } from 'path';
+
 import { themes } from './themes.ts';
 
 const themeList = themes;
@@ -62,8 +63,8 @@ async function updatePackageFile() {
     packageJson.contributes.themes = themes.map((theme) => {
       return {
         label: theme.label,
-        uiTheme: theme.uiTheme,
         path: `./themes/${theme.name}.json`,
+        uiTheme: theme.uiTheme,
       };
     });
 

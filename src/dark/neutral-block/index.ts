@@ -5,15 +5,14 @@ import {
   baseBlockColor,
   baseSemanticColor,
 } from '../../core/index.ts';
-
 import { color } from '../neutral/index.ts';
 
 export const neutralBlock: ThemeConfig = {
-  name: 'neutral-block',
-  type: 'dark',
-  uiTheme: 'vs-dark',
   brightness: [-2, 0, 5, 10],
   colors: getWorkbenchBlockConfig(baseBlockColor(color)),
-  semanticTokenColors: getSemanticsConfig(baseSemanticColor(color)),
+  name: 'neutral-block',
+  semanticTokenColors: getSemanticsConfig(color, baseSemanticColor(color)),
   tokenColors: getScopesConfig(color, baseSemanticColor(color)),
+  type: 'dark',
+  uiTheme: 'vs-dark',
 };
