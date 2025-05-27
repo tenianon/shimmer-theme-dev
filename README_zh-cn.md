@@ -16,11 +16,12 @@
 
 ## 效果图
 
+
 #### Dark Melancholy
 
 <div align="center">
 
-![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/x1qHKMX3/Pix-Pin-2025-05-21-05-06-31.png)
+![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/dqzyyc3z/shimmer-theme-dark-melancholy.png)
 
 </div>
 
@@ -28,7 +29,7 @@
 
 <div align="center">
 
-![shimmer-theme-dark-melancholy.png](https://i.postimg.cc/B651qCz4/Pix-Pin-2025-05-21-05-08-09.png)
+![shimmer-theme-dark-melancholy-block.png](https://i.postimg.cc/D7wLVcRY/shimmer-theme-dark-melancholy-block.png)
 
 </div>
 
@@ -36,7 +37,7 @@
 
 <div align="center">
 
-![shimmer-theme-dark-neutral.png](https://i.postimg.cc/wTNY3bVX/Pix-Pin-2025-05-21-05-14-24.png)
+![shimmer-theme-dark-neutral.png](https://i.postimg.cc/Q81WgYWV/shimmer-theme-dark-neutral.png)
 
 </div>
 
@@ -44,9 +45,18 @@
 
 <div align="center">
 
-![shimmer-theme-dark-neutral.png](https://i.postimg.cc/ydCZ4GvL/Pix-Pin-2025-05-21-05-08-46.png)
+![shimmer-theme-dark-neutral-block.png](https://i.postimg.cc/yVJRx81m/shimmer-theme-dark-neutral-block.png)
 
 </div>
+
+#### Dark Modern
+
+<div align="center">
+
+![shimmer-theme-dark-modern.png](https://i.postimg.cc/BJ7DJK0Z/shimmer-theme-dark-modern.png)
+
+</div>
+
 
 ## 建议
 

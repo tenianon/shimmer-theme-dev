@@ -17,10 +17,11 @@ const outFileList = await globby([
   'package.json',
   'README_zh-cn.md',
   'README.md',
-  'shimmer-theme-dark-melancholy.png',
-  'shimmer-theme-dark-melancholy-block.png',
-  'shimmer-theme-dark-neutral.png',
-  'shimmer-theme-dark-neutral-block.png',
+  'shimmer-theme*.png',
+]);
+
+const pngList = await globby([
+  'shimmer-theme*.png',
 ]);
 
 function changePublicPackage() {
@@ -46,10 +47,7 @@ function changePublicVscodeIgnore() {
 
 README_zh-cn.md
 
-shimmer-theme-dark-melancholy.png
-shimmer-theme-dark-melancholy-block.png
-shimmer-theme-dark-neutral.png
-shimmer-theme-dark-neutral-block.png`;
+${pngList.join('\n')}`;
 
   fs.writeFileSync(vscodeignorePath, vscodeignore);
 }
