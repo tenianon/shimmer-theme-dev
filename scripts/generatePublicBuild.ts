@@ -10,6 +10,7 @@ const outDir = path.join(projectRootPath, 'public-repo');
 const outFileList = await globby([
   '.vscode',
   'themes',
+  '.gitignore',
   '.vscodeignore',
   'CHANGELOG.md',
   'icon.png',
@@ -22,7 +23,7 @@ const outFileList = await globby([
 
 const pngList = await globby(['shimmer-theme*.png']);
 
-function changePublicPackage() {
+function changeBuildPackage() {
   const packagePath = path.join(outDir, 'package.json');
 
   const packageFile = fs.readFileSync(packagePath, 'utf8');
@@ -36,7 +37,18 @@ function changePublicPackage() {
   fs.writeFileSync(packagePath, JSON.stringify(publicPackage, null, 2));
 }
 
-function changePublicVscodeIgnore() {
+function changeBuildGitignore() {
+  const gitignorePath = path.join(outDir, '.gitignore');
+
+  const gitignore = `
+.DS_Store
+
+*.vsix`;
+
+  fs.writeFileSync(gitignorePath, gitignore);
+}
+
+function changeBuildVscodeIgnore() {
   const vscodeignorePath = path.join(outDir, '.vscodeignore');
 
   const vscodeignore = `
@@ -73,5 +85,6 @@ function generatePublicBuild() {
 }
 
 generatePublicBuild();
-changePublicPackage();
-changePublicVscodeIgnore();
+changeBuildGitignore();
+changeBuildVscodeIgnore();
+changeBuildPackage();
