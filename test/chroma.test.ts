@@ -1,5 +1,4 @@
 import chroma from 'chroma-js';
-import { interpolate, formatHex } from 'culori';
 import { baseColor } from '../src/core/color.ts';
 
 console.log(chroma('oklch(12% 0.2 21)').alpha(0.1).darken(0.5).css('oklch'));
@@ -33,9 +32,3 @@ console.log(chroma.mix(c.color2, baseColor.color3, 0.5, 'rgb').hex());
 console.log(chroma.mix(c.color2, baseColor.color3, 0.75, 'rgb').hex());
 console.log(chroma.mix(c.color3, baseColor.color4, 0.5, 'rgb').hex());
 console.log(chroma.mix(c.color4, baseColor.color5, 0.5, 'rgb').hex());
-console.log('-------------');
-console.log(formatHex(interpolate([c.color2, baseColor.color3])(0.25)));
-console.log(formatHex(interpolate([c.color2, '#292929'])(0.25)));
-console.log(formatHex(interpolate([c.color2, baseColor.color3])(0.75)));
-console.log(formatHex(interpolate([c.color3, baseColor.color4])(0.5)));
-console.log(formatHex(interpolate([c.color4, baseColor.color5])(0.5)));

@@ -149,6 +149,7 @@ export const getWorkbenchBlockConfig = (
 
   return {
     ...getWorkbenchConfig(color),
+    'activityBar.background': color['color2.75'],
     'breadcrumb.background': color['color2.50'],
     contrastBorder: baseBorderColor,
     'editorGroupHeader.tabsBackground': color['color2.50'],
