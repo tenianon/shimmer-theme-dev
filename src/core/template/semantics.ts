@@ -168,9 +168,6 @@ export const getSemanticsConfig = (
     'struct:rust': {
       foreground: semantic.class,
     },
-    // 'struct:rust': {
-    //   foreground: semantic.color8
-    // }
   };
 
   return {
