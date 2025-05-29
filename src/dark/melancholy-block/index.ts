@@ -1,6 +1,6 @@
 import {
   getSemanticsConfig,
-  getScopesConfig,
+  getSyntaxConfig,
   getWorkbenchBlockConfig,
   baseBlockColor,
 } from '../../core/index.ts';
@@ -10,7 +10,7 @@ export const melancholyBlock: ThemeConfig = {
   colors: getWorkbenchBlockConfig(baseBlockColor()),
   name: 'melancholy-block',
   semanticTokenColors: getSemanticsConfig(),
-  tokenColors: getScopesConfig(),
+  tokenColors: getSyntaxConfig(),
   type: 'dark',
   uiTheme: 'vs-dark',
 };

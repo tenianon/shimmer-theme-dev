@@ -1,7 +1,7 @@
 import {
   getWorkbenchConfig,
   getSemanticsConfig,
-  getScopesConfig,
+  getSyntaxConfig,
   baseSemanticColor,
 } from '../../core/index.ts';
 
@@ -30,7 +30,7 @@ export const neutral: ThemeConfig = {
   colors: getWorkbenchConfig(color),
   name: 'neutral',
   semanticTokenColors: getSemanticsConfig(color, baseSemanticColor(color)),
-  tokenColors: getScopesConfig(color, baseSemanticColor(color)),
+  tokenColors: getSyntaxConfig(color, baseSemanticColor(color)),
   type: 'dark',
   uiTheme: 'vs-dark',
 };

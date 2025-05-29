@@ -1,4 +1,4 @@
-export function mergedScope(array: Editor.Scope[]) {
+export function mergedScope(array: Editor.Syntax[]) {
   return Object.values(
     array.reduce(
       (acc, { scope, settings }) => {

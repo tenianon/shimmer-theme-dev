@@ -1,7 +1,7 @@
 import {
   getWorkbenchBlockConfig,
   getSemanticsConfig,
-  getScopesConfig,
+  getSyntaxConfig,
   baseBlockColor,
   baseSemanticColor,
 } from '../../core/index.ts';
@@ -12,7 +12,7 @@ export const neutralBlock: ThemeConfig = {
   colors: getWorkbenchBlockConfig(baseBlockColor(color)),
   name: 'neutral-block',
   semanticTokenColors: getSemanticsConfig(color, baseSemanticColor(color)),
-  tokenColors: getScopesConfig(color, baseSemanticColor(color)),
+  tokenColors: getSyntaxConfig(color, baseSemanticColor(color)),
   type: 'dark',
   uiTheme: 'vs-dark',
 };

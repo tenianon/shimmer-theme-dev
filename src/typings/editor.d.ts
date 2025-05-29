@@ -37,7 +37,7 @@ type BaseSemanticType =
   | 'typeParameter'
   | 'variable';
 
-type BaseScopeType =
+type BaseSyntaxType =
   | 'comments'
   | 'functions'
   | 'keywords'
@@ -55,7 +55,7 @@ type SemanticTypeGroup =
 declare namespace Editor {
   export type BaseSemanticKey = SemanticTypeGroup;
 
-  export type BaseScopeKey = BaseScopeType;
+  export type BaseSyntaxKey = BaseSyntaxType;
 
   export type BaseSemantic = Partial<
     Record<
@@ -74,8 +74,8 @@ declare namespace Editor {
       }
     >;
 
-  export type BaseScope = Record<
-    BaseScopeKey,
+  export type BaseSyntax = Record<
+    BaseSyntaxKey,
     {
       fontStyle?: FontStyle;
       foreground: string;
@@ -91,7 +91,7 @@ declare namespace Editor {
     }
   >;
 
-  export type Scope = {
+  export type Syntax = {
     name?: string;
     scope: string | Array<string>;
     settings: {

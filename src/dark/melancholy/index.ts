@@ -1,7 +1,7 @@
 import {
   getWorkbenchConfig,
   getSemanticsConfig,
-  getScopesConfig,
+  getSyntaxConfig,
 } from '../../core/index.ts';
 
 export const melancholy: ThemeConfig = {
@@ -9,7 +9,7 @@ export const melancholy: ThemeConfig = {
   colors: getWorkbenchConfig(),
   name: 'melancholy',
   semanticTokenColors: getSemanticsConfig(),
-  tokenColors: getScopesConfig(),
+  tokenColors: getSyntaxConfig(),
   type: 'dark',
   uiTheme: 'vs-dark',
 };

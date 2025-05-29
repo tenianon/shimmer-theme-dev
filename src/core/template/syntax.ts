@@ -1,15 +1,15 @@
 import { baseSemanticColor, baseLanguageColor, baseColor } from '../color.ts';
 
-export const getScopesConfig = (
+export const getSyntaxConfig = (
   color = baseColor,
   semanticColor = baseSemanticColor(baseColor),
   languageColor = baseLanguageColor,
-): Editor.Scope[] => {
+): Editor.Syntax[] => {
   const base = color;
   const semantic = semanticColor;
   const language = languageColor;
 
-  const group: Editor.Scope[] = [
+  const group: Editor.Syntax[] = [
     // {
     //   name: 'types',
     //   scope: [
@@ -71,7 +71,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const unicode: Editor.Scope[] = [
+  const unicode: Editor.Syntax[] = [
     {
       name: 'unicode',
       scope: [
@@ -87,7 +87,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const c: Editor.Scope[] = [
+  const c: Editor.Syntax[] = [
     {
       scope: ['source.c'],
       settings: {
@@ -124,7 +124,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const cpp: Editor.Scope[] = [
+  const cpp: Editor.Syntax[] = [
     {
       scope: ['source.cpp'],
       settings: {
@@ -166,7 +166,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const css: Editor.Scope[] = [
+  const css: Editor.Syntax[] = [
     {
       scope: ['source.css'],
       settings: {
@@ -293,7 +293,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const go: Editor.Scope[] = [
+  const go: Editor.Syntax[] = [
     {
       scope: ['source.go'],
       settings: {
@@ -338,7 +338,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const html: Editor.Scope[] = [
+  const html: Editor.Syntax[] = [
     {
       scope: ['text.html.derivative meta.tag'],
       settings: {
@@ -368,7 +368,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const js: Editor.Scope[] = [
+  const js: Editor.Syntax[] = [
     {
       scope: [
         'constant.language',
@@ -414,7 +414,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const jsdoc: Editor.Scope[] = [
+  const jsdoc: Editor.Syntax[] = [
     {
       scope: ['storage.type.class.jsdoc'],
       settings: {
@@ -441,7 +441,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const json: Editor.Scope[] = [
+  const json: Editor.Syntax[] = [
     {
       scope: ['support.type.property-name.json'],
       settings: {
@@ -450,7 +450,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const jsx: Editor.Scope[] = [
+  const jsx: Editor.Syntax[] = [
     {
       scope: ['support.class.component'],
       settings: {
@@ -471,7 +471,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const less: Editor.Scope[] = [
+  const less: Editor.Syntax[] = [
     {
       scope: ['source.css.less'],
       settings: {
@@ -510,7 +510,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const md: Editor.Scope[] = [
+  const md: Editor.Syntax[] = [
     {
       scope: ['text.html.markdown', 'meta.paragraph.markdown'],
       settings: {
@@ -649,7 +649,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const py: Editor.Scope[] = [
+  const py: Editor.Syntax[] = [
     {
       scope: ['source.python'],
       settings: {
@@ -717,7 +717,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const scss: Editor.Scope[] = [
+  const scss: Editor.Syntax[] = [
     {
       scope: ['source.css.scss'],
       settings: {
@@ -806,7 +806,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const ts: Editor.Scope[] = [
+  const ts: Editor.Syntax[] = [
     {
       scope: [
         'support.type.builtin.ts',
@@ -836,7 +836,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const tsx: Editor.Scope[] = [
+  const tsx: Editor.Syntax[] = [
     {
       scope: [
         'support.type.builtin.tsx',
@@ -858,7 +858,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const vue: Editor.Scope[] = [
+  const vue: Editor.Syntax[] = [
     {
       scope: [
         'source.vue meta.tag.other entity.name.tag',
@@ -870,7 +870,7 @@ export const getScopesConfig = (
     },
   ];
 
-  const rust: Editor.Scope[] = [
+  const rust: Editor.Syntax[] = [
     {
       scope: ['source.rust'],
       settings: {

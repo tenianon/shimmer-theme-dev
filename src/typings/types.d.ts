@@ -7,7 +7,7 @@ declare interface Theme {
   name: string;
   semanticHighlighting?: boolean;
   semanticTokenColors?: Editor.Semantic;
-  tokenColors?: Editor.Scope[];
+  tokenColors?: Editor.Syntax[];
   type: 'dark' | 'light';
   uiTheme: UiTheme;
 }

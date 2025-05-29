@@ -1,4 +1,4 @@
-import { getSemanticsConfig, getScopesConfig } from '../../core/index.ts';
+import { getSemanticsConfig, getSyntaxConfig } from '../../core/index.ts';
 
 const darkVsColors = {
   'actionBar.toggledBackground': '#383a49',
@@ -168,7 +168,7 @@ export const modern: ThemeConfig = {
   colors,
   name: 'modern',
   semanticTokenColors: getSemanticsConfig(),
-  tokenColors: getScopesConfig(),
+  tokenColors: getSyntaxConfig(),
   type: 'dark',
   uiTheme: 'vs-dark',
 };
