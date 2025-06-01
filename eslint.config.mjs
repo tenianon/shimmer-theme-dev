@@ -13,12 +13,15 @@ export default [
   {
     plugins: { perfectionist },
     rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
       'perfectionist/sort-array-includes': 'warn',
       'perfectionist/sort-exports': 'warn',
       'perfectionist/sort-imports': 'warn',
       'perfectionist/sort-interfaces': 'warn',
       'perfectionist/sort-intersection-types': 'warn',
       'perfectionist/sort-object-types': 'warn',
+
       'perfectionist/sort-objects': [
         'warn',
         {
@@ -44,9 +47,6 @@ export default [
           ],
         },
       ],
-
-      '@typescript-eslint/no-unused-vars': 'off',
-      '@typescript-eslint/no-explicit-any': 'off'
     },
   },
 ];

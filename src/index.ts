@@ -68,7 +68,7 @@ async function updatePackageFile() {
       };
     });
 
-    writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2), 'utf8');
+    writeFile(packageJsonPath, (JSON.stringify(packageJson, null, 2) + '\n'), 'utf8');
     console.log('Update package.json successfully');
   } catch (err) {
     console.error('Update package.json error:', err);
