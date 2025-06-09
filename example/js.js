@@ -86,6 +86,8 @@ function baseFn(arg0, arg1, cb) {
 
 baseFn({})();
 
+Array.from('')
+
 const arrowFn = async (arg = 1) => {
   const localArgLen = arguments.length;
   const localArg = arguments[0];

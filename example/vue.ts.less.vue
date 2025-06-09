@@ -23,6 +23,10 @@ function deepPick<T, K extends string>(
 }
 
 const a = 1000000;
+
+
+Array.from('')
+
 </script>
 <template>
   <div>

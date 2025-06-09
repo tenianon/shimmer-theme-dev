@@ -153,6 +153,9 @@ export const getSemanticsConfig = (
     'class.declaration:vue': {
       foreground: semantic.class,
     },
+    'class.defaultLibrary:vue': {
+      foreground: semantic.class,
+    },
   };
 
   const rs: Editor.Semantic = {
