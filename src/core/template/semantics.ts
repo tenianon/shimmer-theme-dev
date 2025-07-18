@@ -9,6 +9,9 @@ export const getSemanticsConfig = (
   const language = languageColor;
 
   const defaultSemantic: Editor.BaseSemantic = {
+    class: {
+      foreground: semantic.class,
+    },
     comment: {
       foreground: semantic.comment,
     },
@@ -51,9 +54,6 @@ export const getSemanticsConfig = (
     typeParameter: {
       foreground: semantic.typeParameter,
     },
-    // class: {
-    //   foreground: stc.class,
-    // }
     // decorator: {
     //   foreground: stc.decorator,
     // },
@@ -104,18 +104,6 @@ export const getSemanticsConfig = (
     },
   };
 
-  const html: Editor.Semantic = {
-    'class:html': {
-      foreground: semantic.class,
-    },
-  };
-
-  const js: Editor.Semantic = {
-    'class:javascript': {
-      foreground: semantic.class,
-    },
-  };
-
   const py: Editor.Semantic = {
     'class.builtin:python': {
       foreground: language.py.classBuiltin,
@@ -134,27 +122,6 @@ export const getSemanticsConfig = (
     },
     'selfParameter:python': {
       foreground: semantic.typeParameter,
-    },
-  };
-
-  const ts: Editor.Semantic = {
-    'class:typescript': {
-      foreground: semantic.class,
-    },
-  };
-
-  const tsx: Editor.Semantic = {
-    'class:typescriptreact': {
-      foreground: semantic.class,
-    },
-  };
-
-  const vue: Editor.Semantic = {
-    'class.declaration:vue': {
-      foreground: semantic.class,
-    },
-    'class.defaultLibrary:vue': {
-      foreground: semantic.class,
     },
   };
 
@@ -177,12 +144,7 @@ export const getSemanticsConfig = (
     ...defaultSemantic,
     ...c,
     ...cpp,
-    ...html,
-    ...js,
     ...py,
-    ...ts,
-    ...tsx,
-    ...vue,
     ...rs,
   };
 };

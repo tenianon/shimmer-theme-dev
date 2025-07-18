@@ -1,6 +1,9 @@
 <script setup>
 import { ref } from 'vue';
 
+class A {}
+class B extends A {}
+
 </script>
 <template>
   <div>vue</div>

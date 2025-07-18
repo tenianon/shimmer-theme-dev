@@ -405,13 +405,6 @@ export const getSyntaxConfig = (
         foreground: semantic.number,
       },
     },
-    {
-      // support vue file class
-      scope: ['meta.class.js entity.other.inherited-class.js'],
-      settings: {
-        foreground: semantic.class,
-      },
-    },
   ];
 
   const jsdoc: Editor.Syntax[] = [
@@ -860,10 +853,7 @@ export const getSyntaxConfig = (
 
   const vue: Editor.Syntax[] = [
     {
-      scope: [
-        'source.vue meta.tag.other entity.name.tag',
-        'source.vue meta.tag.custom entity.name.tag',
-      ],
+      scope: ['support.class.component.vue'],
       settings: {
         foreground: language.vue.component,
       },
