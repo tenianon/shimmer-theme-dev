@@ -6,7 +6,7 @@ export const getWorkbenchConfig = (color: Color = baseColor): Workbench => {
   const base = color;
 
   const baseBorder = base.color3;
-  const basePrimaryForeground = chroma(base.primary).brighten(2.63).hex();
+  const basePrimaryForeground = chroma(base.primary).brighten(2.66).hex();
 
   return {
     'activityBar.background': base.color2,
