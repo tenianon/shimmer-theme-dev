@@ -201,6 +201,9 @@
     "macro:c": {
       "foreground": "#4495eb"
     },
+    "variable.global:c": {
+      "fontStyle": "bold"
+    },
     "enum:cpp": {
       "foreground": "#6ca371"
     },
@@ -209,6 +212,9 @@
     },
     "templateType:cpp": {
       "foreground": "#d97189"
+    },
+    "variable.global:cpp": {
+      "fontStyle": "bold"
     },
     "class.builtin:python": {
       "foreground": "#149dc9"

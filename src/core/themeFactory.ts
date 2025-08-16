@@ -40,19 +40,24 @@ export function themeFactory(config: ThemeConfig): Theme[] {
 
       for (const token in semanticTokenColors) {
         const key = token as keyof typeof semanticTokenColors;
-        semanticTokenColors[key].foreground = chroma(
-          semanticTokenColors[key].foreground,
-        )
-          .brighten(ratio)
-          .hex();
+
+        if (semanticTokenColors[key].foreground) {
+          semanticTokenColors[key].foreground = chroma(
+            semanticTokenColors[key].foreground,
+          )
+            .brighten(ratio)
+            .hex();
+        }
       }
 
       for (let i = 0; i < tokenColors.length; i++) {
-        tokenColors[i].settings.foreground = chroma(
-          tokenColors[i].settings.foreground,
-        )
-          .brighten(ratio)
-          .hex();
+        if (!tokenColors[i].settings.foreground) {
+          tokenColors[i].settings.foreground = chroma(
+            tokenColors[i].settings.foreground,
+          )
+            .brighten(ratio)
+            .hex();
+        }
       }
     }
 

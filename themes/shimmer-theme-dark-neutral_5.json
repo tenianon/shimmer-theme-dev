@@ -61,6 +61,9 @@
     "macro:c": {
       "foreground": "#63adff"
     },
+    "variable.global:c": {
+      "fontStyle": "bold"
+    },
     "enum:cpp": {
       "foreground": "#84bb88"
     },
@@ -69,6 +72,9 @@
     },
     "templateType:cpp": {
       "foreground": "#f489a1"
+    },
+    "variable.global:cpp": {
+      "fontStyle": "bold"
     },
     "class.builtin:python": {
       "foreground": "#42b5e2"
@@ -109,7 +115,7 @@
         "variable.other.link.underline.jsdoc"
       ],
       "settings": {
-        "foreground": "#6d6d6d"
+        "foreground": "#575757"
       }
     },
     {
@@ -131,7 +137,7 @@
         "source.rust entity.name.type.primitive.rust"
       ],
       "settings": {
-        "foreground": "#3fbca7"
+        "foreground": "#1aa38f"
       }
     },
     {
@@ -166,7 +172,7 @@
         "keyword.other.default.scss"
       ],
       "settings": {
-        "foreground": "#dc94cc"
+        "foreground": "#c27cb3"
       }
     },
     {
@@ -182,7 +188,7 @@
         "source.rust entity.name.type.numeric.rust"
       ],
       "settings": {
-        "foreground": "#7ab9ab"
+        "foreground": "#62a193"
       }
     },
     {
@@ -193,7 +199,7 @@
         "source.python meta.function-call.generic.python"
       ],
       "settings": {
-        "foreground": "#a79dff"
+        "foreground": "#8d85f0"
       }
     },
     {
@@ -212,7 +218,7 @@
         "source.css.scss entity.other.attribute-name.parent-selector-suffix.css punctuation.definition.entity.css"
       ],
       "settings": {
-        "foreground": "#c298e6"
+        "foreground": "#a980cd"
       }
     },
     {
@@ -240,7 +246,7 @@
         "meta.property-list.scss"
       ],
       "settings": {
-        "foreground": "#8e8e8e"
+        "foreground": "#777777"
       }
     },
     {
@@ -259,7 +265,7 @@
         "source.rust"
       ],
       "settings": {
-        "foreground": "#9f9f9f"
+        "foreground": "#878787"
       }
     },
     {
@@ -277,7 +283,7 @@
         "source.rust entity.name.namespace.rust"
       ],
       "settings": {
-        "foreground": "#dc9c6b"
+        "foreground": "#c28455"
       }
     },
     {
@@ -291,7 +297,7 @@
         "source.python constant.character.escape.python"
       ],
       "settings": {
-        "foreground": "#98bb58"
+        "foreground": "#80a341"
       }
     },
     {
@@ -305,7 +311,7 @@
         "text.html.markdown markup.underline.link.image.markdown"
       ],
       "settings": {
-        "foreground": "#55b7c6"
+        "foreground": "#389fad"
       }
     },
     {
@@ -327,7 +333,7 @@
         "source.rust meta.function.call.rust"
       ],
       "settings": {
-        "foreground": "#81b7e1"
+        "foreground": "#689fc8"
       }
     },
     {
@@ -340,7 +346,7 @@
         "support.constant.color.w3c-special-color-keyword.less"
       ],
       "settings": {
-        "foreground": "#d4b170"
+        "foreground": "#ba9959"
       }
     },
     {
@@ -371,7 +377,7 @@
         "source.rust entity.name.type.rust"
       ],
       "settings": {
-        "foreground": "#d99a9d"
+        "foreground": "#bf8286"
       }
     },
     {
@@ -387,7 +393,7 @@
         "source.rust constant.other.caps.rust"
       ],
       "settings": {
-        "foreground": "#63adff"
+        "foreground": "#4495eb"
       }
     },
     {
@@ -405,7 +411,7 @@
         "variable.scss"
       ],
       "settings": {
-        "foreground": "#84bb88"
+        "foreground": "#6ca371"
       }
     },
     {
@@ -416,7 +422,7 @@
         "source.rust entity.name.type.lifetime.rust"
       ],
       "settings": {
-        "foreground": "#f489a1"
+        "foreground": "#d97189"
       }
     },
     {
@@ -424,7 +430,7 @@
         "support.class.component"
       ],
       "settings": {
-        "foreground": "#42b6e3"
+        "foreground": "#149eca"
       }
     },
     {
@@ -434,7 +440,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#a79dff"
+        "foreground": "#8d85f0"
       }
     },
     {
@@ -444,7 +450,7 @@
       ],
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#d4b170"
+        "foreground": "#ba9959"
       }
     },
     {
@@ -454,7 +460,7 @@
       ],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#d99a9d"
+        "foreground": "#bf8286"
       }
     },
     {
@@ -464,7 +470,7 @@
       ],
       "settings": {
         "fontStyle": "strikethrough",
-        "foreground": "#7d7d7d"
+        "foreground": "#676767"
       }
     },
     {
@@ -474,7 +480,7 @@
         "support.class.component.vue"
       ],
       "settings": {
-        "foreground": "#72c498"
+        "foreground": "#5aab81"
       }
     }
   ],

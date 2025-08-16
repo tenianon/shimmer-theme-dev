@@ -90,6 +90,9 @@ export const getSemanticsConfig = (
     'macro:c': {
       foreground: semantic.class,
     },
+    'variable.global:c': {
+      fontStyle: 'bold',
+    },
   };
 
   const cpp: Editor.Semantic = {
@@ -101,6 +104,9 @@ export const getSemanticsConfig = (
     },
     'templateType:cpp': {
       foreground: language.html.tag,
+    },
+    'variable.global:cpp': {
+      fontStyle: 'bold',
     },
   };
 

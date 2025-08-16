@@ -87,7 +87,7 @@ declare namespace Editor {
     string,
     {
       fontStyle?: FontStyle;
-      foreground: string;
+      foreground?: string;
     }
   >;
 
